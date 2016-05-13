@@ -1,7 +1,7 @@
 <?php
 
 function taylorhammond_enqueue_style() {
-	wp_enqueue_style( 'core', get_stylesheet_uri(), false );
+	wp_enqueue_style( 'core', get_stylesheet_uri() );
 }
 
 function taylorhammond_enqueue_script() {
