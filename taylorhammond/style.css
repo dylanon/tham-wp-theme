@@ -60,6 +60,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .navbar-default {
 	border-left: 0;
 	border-right: 0;
+	border-top: 0;
 }
 
 .navbar-default, .title-block {
@@ -193,6 +194,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	
 	.nav-thought ul.navbar-nav:nth-child(2) {
 		padding-top: 3px !important;
+	}
+}
+
+/* WordPress Fixes
+-------------------------------------------------------------- */
+img.alignleft, /*Apply Bootstrap .img-responsive attributes*/
+img.alignright,
+img.aligncenter,
+img.alignnone {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-floats-fix { /* Stop img alignment floats causing subsequent content to jump up */
+  clear: both;
 }
 
 /* =WordPress Core
