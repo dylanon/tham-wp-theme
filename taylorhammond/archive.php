@@ -50,12 +50,14 @@
         <?php } ?>
           
         <div class="col-md-4">
-          <h1><a href="<?php the_permalink()?>"><?php the_title(); ?></a></h1>
-          <div><?php the_content('(Read more ...)'); ?></div>
-          <p class="small text-right text-uppercase img-floats-fix"><br />
-            <?php edit_post_link( '[ Edit This ]' ); ?>
-          </p>
-          <hr />
+          <div class="blog-post-preview">
+            <h1><a class="text-uppercase" href="<?php the_permalink()?>"><?php the_title(); ?></a></h1>
+            <div class="text-uppercase post-date"><?php the_time('F j, Y'); ?></div>
+            <div><?php the_excerpt('(Read more ...)'); ?></div>
+            <div class="small text-right text-uppercase img-floats-fix">
+              <?php edit_post_link( '[ Edit This ]' ); ?>
+            </div>
+          </div>
         </div>
 
         <?php $i++; ?>
