@@ -15,6 +15,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import url('css/bootstrap.min.css');
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
 
 /* =WordPress Core
 -------------------------------------------------------------- */
@@ -144,6 +145,26 @@ body {
 	color: #434d69;
 }
 
+p {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: "Roboto Slab", serif;
+	text-transform: uppercase;
+}
+
 a,
 a:visited,
 a:active {
@@ -206,10 +227,21 @@ a:hover {
 
 .navbar-default, .title-block {
 	background-color: #b55953;
-	font-family: "Arial Black", sans-serif;
+	font-family: "Arial Black", Gadget, sans-serif;
 	color: #fff;
 	padding: 5px 0px;
 	margin-bottom: 0;
+}
+
+.navbar-default h1,
+.navbar-default h2,
+.navbar-default h3,
+.navbar-default h4,
+.navbar-default h5,
+.navbar-default h6,
+.title-block h1 { /* Exclude main navbar heading from default heading styles */
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-decoration: none;
 }
 
 .title-block h1 {
@@ -343,35 +375,31 @@ a:hover {
 	border: 4px solid #434d69;
 	border-radius: 5px; /* round cornders */
 	margin-top: 25px;
-	padding: 5px;
+	padding: 5px 15px 5px 15px;
 }
-
-/* .blog-post-preview h1 > a {
-	color: #434d69;
-}
-
-.blog-post-preview h1 > a:hover {
-	color: #dfb377;
-} */
 
 .blog-post-preview h1 {
 	margin: 0;
-/* 	text-decoration: underline; */
+	font-size: 26px;
 }
 
-.blog-post-preview h1,
 .post-date {
-	font-family: "Cutive Mono", "Times New Roman", serif;
+	font-family: "Roboto Slab", serif;
 }
 
-.blog-post-preview p {
-	font-family: Helvetica, Arial, sans-serif;
+.blog-post p {
 	padding-top: 10px;
 }
 
 .post-date {
-	font-size: 24px;
+	font-size: 18px;
 	color: #b55953;
+}
+
+/* Blog Styles (Single Post View) */
+
+.slim-width {
+	max-width: 800px;
 }
 
 .yellow-border {

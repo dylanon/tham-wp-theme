@@ -39,13 +39,13 @@
 	</h1>
 </div>
 
-<div class="container">
+<div class="container slim-width">
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<div class="the-post">
+	<div class="blog-post">
 
-		<h1><?php the_title(); ?></h1>
+		<h1 class="text-uppercase"><?php the_title(); ?></h1>
 		<span class="post-wrapper"><?php the_content('(Read more ...)'); ?></span>
 		<p class="small text-right text-uppercase img-floats-fix"><br />
 			<?php the_tags( 'Tagged in: ' ); ?><br />
@@ -54,7 +54,7 @@
 		</p>
 		<hr />
 
-	</div>
+	</div> <!-- .blog-post -->
 
 	<?php endwhile; else : ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
