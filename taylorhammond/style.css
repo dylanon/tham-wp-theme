@@ -15,8 +15,170 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import url('css/bootstrap.min.css');
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+/* WordPress Fixes
+-------------------------------------------------------------- */
+img.alignleft, /*Apply Bootstrap .img-responsive attributes*/
+img.alignright,
+img.aligncenter,
+img.alignnone {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-floats-fix { /* Stop img alignment floats causing subsequent content to jump up */
+  clear: both;
+}
 
 /*Custom Styles for Taylor Hammond*/
+
+body {
+	color: #434d69;
+}
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: "Roboto Slab", serif;
+	text-transform: uppercase;
+}
+
+a,
+a:visited,
+a:active {
+	color: #434d69;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #dfb377;
+}
+
+.navbar-default a { /* Exclude navbar links from default styling */
+	text-decoration: none;
+}
 
 .nav > li > a {
 /*  position: relative;
@@ -65,10 +227,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .navbar-default, .title-block {
 	background-color: #b55953;
-	font-family: "Arial Black", sans-serif;
+	font-family: "Arial Black", Gadget, sans-serif;
 	color: #fff;
 	padding: 5px 0px;
 	margin-bottom: 0;
+}
+
+.navbar-default h1,
+.navbar-default h2,
+.navbar-default h3,
+.navbar-default h4,
+.navbar-default h5,
+.navbar-default h6,
+.title-block h1 { /* Exclude main navbar heading from default heading styles */
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-decoration: none;
 }
 
 .title-block h1 {
@@ -197,124 +370,44 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 }
 
-/* WordPress Fixes
--------------------------------------------------------------- */
-img.alignleft, /*Apply Bootstrap .img-responsive attributes*/
-img.alignright,
-img.aligncenter,
-img.alignnone {
-  display: block;
-  max-width: 100%;
-  height: auto;
+/* Blog Styles (Archive/Category View) */
+.blog-post-preview {
+	border: 4px solid #434d69;
+	border-radius: 5px; /* round cornders */
+	margin-top: 25px;
+	padding: 5px 15px 5px 15px;
 }
 
-.img-floats-fix { /* Stop img alignment floats causing subsequent content to jump up */
-  clear: both;
+.blog-post-preview h1 {
+	margin: 0;
+	font-size: 26px;
 }
 
-/* =WordPress Core
--------------------------------------------------------------- */
-.alignnone {
-    margin: 5px 20px 20px 0;
+.post-date {
+	font-family: "Roboto Slab", serif;
 }
 
-.aligncenter,
-div.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
+.blog-post p {
+	padding-top: 10px;
 }
 
-.alignright {
-    float:right;
-    margin: 5px 0 20px 20px;
+.post-date {
+	font-size: 18px;
+	color: #b55953;
 }
 
-.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
+/* Blog Styles (Single Post View) */
+
+.slim-width {
+	max-width: 800px;
 }
 
-a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
+.yellow-border {
+	border-color: #dfb377;
 }
 
-a img.alignnone {
-    margin: 5px 20px 20px 0;
-}
+/* Footer */
 
-a img.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
-a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
-}
-
-.wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignright {
-    margin: 5px 0 20px 20px;
-}
-
-.wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
-}
-
-.wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px;
-}
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000; /* Above WP toolbar. */
+.footer {
+	margin-top: 30px;
 }

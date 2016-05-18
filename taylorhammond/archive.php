@@ -41,7 +41,8 @@
 
     <div class="container">
       
-      <?php $i=0; // counter ?>
+      <?php $i=0; // counter (for row display) ?>
+      <?php $j=0; // counter (for alternating colours) ?>
       
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -50,15 +51,18 @@
         <?php } ?>
           
         <div class="col-md-4">
-          <h1><a href="<?php the_permalink()?>"><?php the_title(); ?></a></h1>
-          <div><?php the_content('(Read more ...)'); ?></div>
-          <p class="small text-right text-uppercase img-floats-fix"><br />
-            <?php edit_post_link( '[ Edit This ]' ); ?>
-          </p>
-          <hr />
+          <div class="blog-post-preview blog-post<?php if ($j%2==0) { ?> yellow-border<?php } ?>">
+            <h1><a class="text-uppercase" href="<?php the_permalink()?>"><?php the_title(); ?></a></h1>
+            <div class="text-uppercase post-date"><?php the_time('F j, Y'); ?></div>
+            <div><?php the_excerpt('(Read more ...)'); ?></div>
+            <div class="small text-right text-uppercase img-floats-fix">
+              <?php edit_post_link( '[ Edit This ]' ); ?>
+            </div>
+          </div>
         </div>
 
         <?php $i++; ?>
+        <?php $j++; ?>
             
         <?php if($i%3==0) { // if counter is multiple of 3 ?>
           </div>
