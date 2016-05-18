@@ -204,9 +204,9 @@ body {
 /* Blog Styles */
 .blog-post-preview {
 	border: 4px solid #434d69;
+	border-radius: 5px; /* round cornders */
 	margin-top: 25px;
 	padding: 5px;
-/* 	color: #434d69; */
 }
 
 .blog-post-preview h1 {
@@ -227,6 +227,10 @@ body {
 .post-date {
 	font-size: 24px;
 	color: #b55953;
+}
+
+.yellow-border {
+	border-color: #dfb377;
 }
 
 /* WordPress Fixes
