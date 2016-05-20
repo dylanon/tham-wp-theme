@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<nav class="navbar navbar-default text-uppercase nav-thought">
+<nav class="navbar navbar-default text-uppercase">
 	<div class="container">
 
 		<div class="navbar-header">
@@ -15,27 +15,20 @@
 		</div>
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<div class="navbar-right">
-				<ul class="nav navbar-nav nav-links">
-					<li class="active"><a href="#">Blog</a></li>
-					<li><a href="#">Research</a></li>
-				</ul>
-				<ul class="nav navbar-nav nav-links navbar-right">
-					<li><a href="#">Reviews</a></li>
-					<li><a href="#">CV</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="index-performance.html" class="hide-crossover">Performance</a></li>
-				</ul>
-			</div>
-			 <h1 class="section-heading navbar-right">Thought</h1>
+			<ul class="nav navbar-nav nav-links navbar-right">
+				<li><a href="#">Past</a></li>
+				<li class="active"><a href="#">Present</a></li>
+				<li><a href="#" class="hide-crossover">Thought</a></li>
+			</ul>
+			 <h1 class="section-heading navbar-right">Performance</h1>
 		</div>
 
 	</div>
 </nav>
 
-<div class="container-fluid title-block nav-thought">
+<div class="container-fluid title-block">
 	<h1 class="text-uppercase text-center">
-		Thought
+		Performance
 	</h1>
 </div>
 
@@ -70,7 +63,7 @@
 		
 		</div>
 
-	</div> <!-- .blog-post -->
+	</div> <!-- .portfolio-post -->
 
 	<?php endwhile; else : ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
