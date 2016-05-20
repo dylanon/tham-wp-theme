@@ -49,6 +49,9 @@
 			
 			<div class="col-md-7 portfolio-image">
 				<?php the_post_thumbnail() ?>
+				<div class="portfolio-caption">
+					<?php the_post_thumbnail_caption() ?>
+				</div>
 			</div>
 			
 			<div class="col-md-5">
@@ -66,17 +69,12 @@
 			</div>
 		
 		</div>
-		
-		<hr />
 
 	</div> <!-- .blog-post -->
 
 	<?php endwhile; else : ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 	<?php endif; ?>
-
-	<div class="text-center"><strong><?php next_post_link( '%link', '&#8592; %title (newer)' ); ?>&nbsp;&nbsp;//&nbsp;&nbsp;<?php previous_post_link(  '%link', '%title (older) &#8594;' ); ?></strong></div>
-	<hr />
 	
 </div>
 

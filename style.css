@@ -426,6 +426,10 @@ a:hover {
 	margin-top: 25px;
 }
 
+.portfolio-caption {
+	text-decoration: underline;
+}
+
 /* Footer */
 
 .footer {
