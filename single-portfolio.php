@@ -39,19 +39,34 @@
 	</h1>
 </div>
 
-<div class="container slim-width">
+<div class="container">
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<div class="blog-post">
+	<div class="portfolio-post">
 
-		<h1 class="text-uppercase"><?php the_title(); ?></h1>
-		<span class="post-wrapper"><?php the_content('(Read more ...)'); ?></span>
-		<p class="small text-right text-uppercase img-floats-fix"><br />
-			<?php the_tags( 'Tagged in: ' ); ?><br />
-			<?php the_time('l F j, Y'); ?>&nbsp;&nbsp;|&nbsp;&nbsp;<?php the_time() ?><br /><br />
-			<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
-		</p>
+		<div class="row">
+			
+			<div class="col-md-7 portfolio-image">
+				<?php the_post_thumbnail() ?>
+			</div>
+			
+			<div class="col-md-5">
+			
+				<div class="portfolio-content-area">
+
+					<h1 class="text-uppercase"><?php the_title(); ?></h1>
+					<span class="post-wrapper"><?php the_content('(Read more ...)'); ?></span>
+					<p class="small text-right text-uppercase img-floats-fix"><br />
+						<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
+					</p>
+
+				</div>
+				
+			</div>
+		
+		</div>
+		
 		<hr />
 
 	</div> <!-- .blog-post -->

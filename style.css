@@ -373,7 +373,7 @@ a:hover {
 /* Blog Styles (Archive/Category View) */
 .blog-post-preview {
 	border: 4px solid #434d69;
-	border-radius: 5px; /* round cornders */
+	border-radius: 5px; /* round corners */
 	margin-top: 25px;
 	padding: 5px 15px 5px 15px;
 }
@@ -404,6 +404,26 @@ a:hover {
 
 .yellow-border {
 	border-color: #dfb377;
+}
+
+/* Portfolio Post Styles */
+
+/* .portfolio-post */
+
+.portfolio-content-area {
+	border: 4px solid #dfb377;
+	border-radius: 5px; /* round corners */
+	margin-top: 25px;
+	padding: 5px 15px 5px 15px;
+}
+
+.portfolio-image img {
+	display: block;
+  max-width: 100%;
+  height: auto;
+	border: 4px solid #b55953;
+	border-radius: 5px; /* round corners */
+	margin-top: 25px;
 }
 
 /* Footer */
