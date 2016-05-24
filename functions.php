@@ -57,6 +57,15 @@ function my_mce_before_init_insert_formats( $init_array ) {
   
 } 
 // Attach callback to 'tiny_mce_before_init' 
-add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );  
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+
+/**
+ * Registers an editor stylesheet for the theme.
+ * Previews custom editor themes in TinyMCE editor.
+ */
+function wpdocs_theme_add_editor_styles() {
+    add_editor_style();
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 
 ?>
