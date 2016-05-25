@@ -1,5 +1,3 @@
-<?php get_header(); ?>
-
     <nav class="navbar navbar-default text-uppercase">
       <div class="container">
 
