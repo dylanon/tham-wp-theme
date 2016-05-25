@@ -230,7 +230,20 @@ a:hover {
 	font-family: "Arial Black", Gadget, sans-serif;
 	color: #fff;
 	padding: 5px 0px;
+}
+
+.title-block { /* Navbar bottom margin in mobile view */
 	margin-bottom: 20px;
+}
+
+.navbar { /* Remove extra bottom margin on navbar */
+	margin-bottom: 0;
+}
+
+@media (min-width: 768px) { /* Add bottom margin to navbar on desktop */
+	.navbar-default {
+		margin-bottom: 20px;
+	}
 }
 
 .navbar-default h1,
