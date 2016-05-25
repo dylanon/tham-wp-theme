@@ -14,8 +14,8 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav nav-links navbar-right">
-            <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/past">Past</a></li>
-            <li class="active"><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present">Present</a></li>
+            <li <?php if ( $pagename == 'past' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/past">Past</a></li>
+            <li <?php if ( $pagename == 'present' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present">Present</a></li>
             <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/blog" class="hide-crossover">Thought</a></li>
           </ul>
            <h1 class="section-heading navbar-right">Performance</h1>

@@ -16,12 +16,12 @@
           <div class="navbar-right">
             <ul class="nav navbar-nav nav-links">
               <li class="active"><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/blog">Blog</a></li>
-              <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/research">Research</a></li>
+              <li <?php if ( $pagename == 'research' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/research">Research</a></li>
             </ul>
             <ul class="nav navbar-nav nav-links navbar-right">
               <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/reviews">Reviews</a></li>
-              <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/cv">CV</a></li>
-              <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/about">About</a></li>
+              <li <?php if ( $pagename == 'cv' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/cv">CV</a></li>
+              <li <?php if ( $pagename == 'about' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/about">About</a></li>
               <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" class="hide-crossover">Performance</a></li>
             </ul>
           </div>
