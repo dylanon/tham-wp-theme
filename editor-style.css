@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
 
 body#tinymce.wp-editor .portfolio-info {
-	font-family: "Roboto Slab", serif;
+	font-family: "Courier New", Courier, monospace;
 	font-size: 20px;
 	text-transform: lowercase;
 }

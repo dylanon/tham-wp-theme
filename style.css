@@ -15,7 +15,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import url('css/bootstrap.min.css');
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
 
 /* =WordPress Core
 -------------------------------------------------------------- */
@@ -161,7 +160,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-	font-family: "Roboto Slab", serif;
+	font-family: "Courier New", Courier, monospace;
 	text-transform: uppercase;
 }
 
@@ -380,15 +379,17 @@ a:hover {
 
 .blog-post-preview h1 {
 	margin: 0;
-	font-size: 26px;
+	font-size: 32px;
 }
 
 .post-date {
-	font-family: "Roboto Slab", serif;
+	font-family: "Courier New", Courier, monospace;
+	position: relative;
+	top: -5px;
 }
 
 .blog-post p {
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 .post-date {
@@ -417,6 +418,10 @@ a:hover {
 	padding: 5px 15px 5px 15px;
 }
 
+.portfolio-content-area h1 {
+	margin: 10px 0 0 0;
+}
+
 .portfolio-image img {
 	display: block;
   max-width: 100%;
@@ -428,14 +433,14 @@ a:hover {
 
 .portfolio-caption {
 	text-decoration: underline;
-	font-family: "Roboto Slab", serif;
+	font-family: "Courier New", Courier, monospace;
 	font-size: 16px;
-	margin-top: 4px;
+	margin-top: 5px;
 	margin-left: 5px;
 }
 
 .portfolio-info {
-	font-family: "Roboto Slab", serif;
+	font-family: "Courier New", Courier, monospace;
 	font-size: 20px;
 	text-transform: lowercase;
 }
