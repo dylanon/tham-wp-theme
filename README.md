@@ -11,3 +11,4 @@ To do list:
 - Photo gallery support
 - Code directions for custom user-built pages (e.g. Present - if user wants columns and/or bordered boxes)
 - Make footer stick to bottom of view
+- Figure out Arial Bold usage on Android
