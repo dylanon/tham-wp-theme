@@ -445,6 +445,11 @@ a:hover {
 	text-transform: lowercase;
 }
 
+/* Page Styles */
+.page-width {
+	max-width: 950px;
+}
+
 /* Footer */
 
 .footer {
