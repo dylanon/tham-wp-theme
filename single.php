@@ -2,7 +2,7 @@
 
 <?php get_template_part( 'nav-thought' ); // Navigation bar ?>
 
-<div class="container slim-width">
+<div class="bottom-padded slim-width container">
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

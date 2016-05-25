@@ -386,6 +386,22 @@ a:hover {
 	}
 }
 
+/* General Stlyes */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.page-wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+.bottom-padded {
+	padding-bottom: 75px;
+}
+
 /* Blog Styles (Archive/Category View) */
 .blog-post-preview {
 	border: 4px solid #434d69;
@@ -471,5 +487,8 @@ a:hover {
 /* Footer */
 
 .footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	margin-top: 30px;
 }

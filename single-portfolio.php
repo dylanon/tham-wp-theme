@@ -2,7 +2,7 @@
 
 <?php get_template_part( 'nav-performance' ); // Navigation bar ?>
 
-<div class="container">
+<div class="bottom-padded container">
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

@@ -2,7 +2,7 @@
 
 <?php get_template_part( 'nav-thought' ); // Navigation bar ?>
 
-    <div class="container">
+    <div class="bottom-padded container">
       
       <?php $i=0; // counter (for row display) ?>
       <?php $j=0; // counter (for alternating colours) ?>

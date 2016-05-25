@@ -2,7 +2,7 @@
 
 <?php get_template_part( 'nav-performance' ); // Navigation bar ?>
 
-    <div class="container">
+    <div class="bottom-padded container">
       
       <h1 class="text-center">
         Projects as Director
