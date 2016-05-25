@@ -8,21 +8,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img class="taylor-brand" src="<?php bloginfo('template_directory'); ?>/img/logo-white.png" alt="Taylor Hammond" /></a>
+          <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img class="taylor-brand" src="<?php bloginfo('template_directory'); ?>/img/logo-white.png" alt="Taylor Hammond" /></a>
           
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <div class="navbar-right">
             <ul class="nav navbar-nav nav-links">
-              <li class="active"><a href="#">Blog</a></li>
-              <li><a href="#">Research</a></li>
+              <li class="active"><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/blog">Blog</a></li>
+              <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/research">Research</a></li>
             </ul>
             <ul class="nav navbar-nav nav-links navbar-right">
-              <li><a href="#">Reviews</a></li>
-              <li><a href="#">CV</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="index-performance.html" class="hide-crossover">Performance</a></li>
+              <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/reviews">Reviews</a></li>
+              <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/cv">CV</a></li>
+              <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/about">About</a></li>
+              <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" class="hide-crossover">Performance</a></li>
             </ul>
           </div>
            <h1 class="section-heading navbar-right">Thought</h1>
