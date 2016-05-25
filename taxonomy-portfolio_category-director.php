@@ -35,7 +35,7 @@
     <div class="container">
       
       <h1 class="text-center">
-        All Projects
+        Projects as Director
       </h1>
       
       <?php $i=0; // counter (for row display) ?>
