@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php $mysection = 'reviews'; ?>
+
 <?php get_template_part( 'nav-thought' ); // Navigation bar ?>
 
     <div class="bottom-padded container">
