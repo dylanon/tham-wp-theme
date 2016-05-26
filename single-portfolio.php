@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php $mysection = 'past'; ?>
+
 <?php get_template_part( 'nav-performance' ); // Navigation bar ?>
 
 <div class="bottom-padded container">
