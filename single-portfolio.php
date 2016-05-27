@@ -12,6 +12,8 @@
 
 		<div class="row">
 			
+			<?php if ( has_post_thumbnail() ) { ?>
+			
 			<div class="col-md-7 portfolio-image">
 				<?php the_post_thumbnail() ?>
 				<div class="portfolio-caption">
@@ -20,6 +22,12 @@
 			</div>
 			
 			<div class="col-md-5">
+				
+			<?php } else { ?>
+			
+			<div class="col-md-12">
+			
+			<?php } ?>
 			
 				<div class="portfolio-content-area">
 
