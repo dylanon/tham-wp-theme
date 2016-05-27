@@ -14,7 +14,7 @@
 			
 			<?php if ( has_post_thumbnail() ) { ?>
 			
-			<div class="col-md-7 portfolio-image">
+			<div class="col-md-7 featured-image border-red">
 				<?php the_post_thumbnail() ?>
 				<div class="portfolio-caption">
 					<?php the_post_thumbnail_caption() ?>

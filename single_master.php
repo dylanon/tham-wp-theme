@@ -5,6 +5,18 @@
 	<div class="blog-post">
 
 		<h1 class="text-uppercase"><?php the_title(); ?></h1>
+		
+		<?php if ( has_post_thumbnail() ) { ?>
+		
+		<div class="featured-image border-yellow">
+			<?php the_post_thumbnail() ?>
+			<div class="portfolio-caption">
+				<?php the_post_thumbnail_caption() ?>
+			</div>
+		</div>
+		
+		<?php } ?>
+		
 		<span class="post-wrapper"><?php the_content('(Read more ...)'); ?></span>
 		<p class="small text-right text-uppercase img-floats-fix"><br />
 			<?php the_tags( 'Tagged in: ' ); ?><br />
