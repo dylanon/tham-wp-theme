@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <div class="navbar-right">
             <ul class="nav navbar-nav nav-links">
-              <li <?php if ($mysection == 'blog') { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/blog">Blog</a></li>
+              <li <?php if ( $mysection == 'blog' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/blog">Blog</a></li>
               <li <?php if ( $pagename == 'research' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/research">Research</a></li>
             </ul>
             <ul class="nav navbar-nav nav-links navbar-right">
