@@ -3,6 +3,7 @@
 This WordPress theme is built on Bootstrap - getbootstrap.com
 
 To do list:
+- Featured images for Pages
 - Build Past page
 - Remove 'category' base from Blog and Reviews (and update navbar)
 - Fix portfolio and portfolio cateogry link aesthetics
