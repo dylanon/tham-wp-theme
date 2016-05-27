@@ -386,7 +386,15 @@ a:hover {
 	}
 }
 
-/* General Stlyes */
+/* Nav Crossover */
+#nav-crossover {
+	position: absolute;
+	top: 0;
+	width: 100%; /* delete this after? */
+	display: none;
+}
+
+/* General Styles */
 html, body {
 	margin: 0;
 	padding: 0;
