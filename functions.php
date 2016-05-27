@@ -68,4 +68,14 @@ function wpdocs_theme_add_editor_styles() {
 }
 add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 
+function get_custom_cat_template($single_template) { /* Register custom single post template for Reviews */
+     global $post;
+ 
+       if ( in_category( 'reviews' )) {
+          $single_template = dirname( __FILE__ ) . '/single-reviews.php';
+     }
+     return $single_template;
+}
+add_filter( "single_template", "get_custom_cat_template" ) ;
+
 ?>
