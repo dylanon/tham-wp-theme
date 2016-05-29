@@ -10,7 +10,7 @@
 		
 		<div class="featured-image border-yellow">
 			<?php the_post_thumbnail() ?>
-			<div class="portfolio-caption">
+			<div class="featured-image-caption">
 				<?php the_post_thumbnail_caption() ?>
 			</div>
 		</div>
