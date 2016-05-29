@@ -14,6 +14,18 @@
           
         <div class="col-md-4">
           <h1><a href="<?php the_permalink()?>"><?php the_title(); ?></a></h1>
+          
+          <?php if ( has_post_thumbnail() ) { ?>
+
+          <div class="featured-image border-red">
+            <?php the_post_thumbnail() ?>
+            <div class="featured-image-caption">
+              <?php the_post_thumbnail_caption() ?>
+            </div>
+          </div>
+
+          <?php } ?>
+          
           <div><?php the_content('(Read more ...)'); ?></div>
           <p class="small text-right text-uppercase img-floats-fix"><br />
             <?php edit_post_link( '[ Edit This ]' ); ?>
