@@ -10,8 +10,8 @@
 
         <?php if ( has_post_thumbnail() ) { ?>
 
-        <div class="featured-image border-yellow">
-          <?php the_post_thumbnail() ?>
+        <div class="featured-image">
+          <?php the_post_thumbnail( 'full', array( 'class' => 'border-yellow' ) ) ?>
           <div class="featured-image-caption">
             <?php the_post_thumbnail_caption() ?>
           </div>

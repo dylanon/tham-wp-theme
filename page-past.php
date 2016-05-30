@@ -10,8 +10,8 @@
       
         <?php if ( has_post_thumbnail() ) { ?>
 
-          <div class="featured-image border-red">
-            <?php the_post_thumbnail() ?>
+          <div class="featured-image">
+            <?php the_post_thumbnail( 'full', array( 'class' => 'border-red' ) ) ?>
             <div class="featured-image-caption">
               <?php the_post_thumbnail_caption() ?>
             </div>
@@ -21,9 +21,9 @@
       
         <div class="row">
           
-          <div class="col-sm-6 text-center">
+          <div class="col-xs-6 square-size">
             
-            <div class="square">
+            <div class="square border-yellow border-rounded">
               
               <div class="square-content">
             
@@ -37,14 +37,14 @@
             
           </div>
           
-          <div class="col-sm-6 text-center">
+          <div class="col-xs-6 square-size">
             
-            <div class="square">
+            <div class="square border-yellow border-rounded">
               
               <div class="square-content">
             
                 <h2>
-                  Actor
+                  Creator
                 </h2>
                 
              </div>
@@ -57,14 +57,14 @@
 
         <div class="row">
           
-          <div class="col-sm-6 text-center">
+          <div class="col-xs-6 square-size">
             
-            <div class="square">
+            <div class="square border-yellow border-rounded">
               
               <div class="square-content">
             
                 <h2>
-                  Actor
+                  Director
                 </h2>
                 
              </div>
@@ -73,14 +73,14 @@
             
           </div>
           
-          <div class="col-sm-6 text-center">
+          <div class="col-xs-6 square-size">
             
-            <div class="square">
+            <div class="square border-yellow border-rounded">
               
               <div class="square-content">
             
                 <h2>
-                  Actor
+                  Teacher
                 </h2>
                 
              </div>
@@ -91,7 +91,7 @@
           
         </div>
       
-        <?php the_content(); ?>
+        <div class="top-margin"><?php the_content(); ?></div>
         <?php edit_post_link(); ?>
 
       <?php endwhile; else: ?>
