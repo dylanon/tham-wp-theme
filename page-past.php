@@ -21,7 +21,7 @@
       
         <div class="row">
           
-          <div class="col-xs-6 square-size">
+          <div class="col-sm-6 square-size">
             
             <div class="square border-yellow border-rounded">
               
@@ -37,7 +37,7 @@
             
           </div>
           
-          <div class="col-xs-6 square-size">
+          <div class="col-sm-6 square-size">
             
             <div class="square border-yellow border-rounded">
               
@@ -57,7 +57,7 @@
 
         <div class="row">
           
-          <div class="col-xs-6 square-size">
+          <div class="col-sm-6 square-size">
             
             <div class="square border-yellow border-rounded">
               
@@ -73,7 +73,7 @@
             
           </div>
           
-          <div class="col-xs-6 square-size">
+          <div class="col-sm-6 square-size">
             
             <div class="square border-yellow border-rounded">
               
