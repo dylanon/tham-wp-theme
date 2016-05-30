@@ -497,8 +497,31 @@ html, body {
 }
 
 /* Page Styles */
+
 .page-width {
 	max-width: 950px;
+}
+
+/* Past Page Styles */
+
+.square {
+	position: relative;
+	width: 100%;
+	border: 1px solid black;
+}
+
+.square:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.square-content {
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 /* Footer */
