@@ -26,10 +26,12 @@
             <div class="square border-yellow border-rounded">
               
               <div class="square-content">
-            
-                <h2>
-                  Actor
-                </h2>
+                
+                <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/actor">
+                  <h2>
+                    Actor
+                  </h2>
+                </a>
                 
              </div>
               
@@ -43,9 +45,11 @@
               
               <div class="square-content">
             
-                <h2>
-                  Creator
-                </h2>
+                <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/creator">
+                  <h2>
+                    Creator
+                  </h2>
+                </a>
                 
              </div>
               
@@ -63,9 +67,11 @@
               
               <div class="square-content">
             
-                <h2>
-                  Director
-                </h2>
+                <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/director">
+                  <h2>
+                    Director
+                  </h2>
+                </a>
                 
              </div>
               
@@ -79,9 +85,11 @@
               
               <div class="square-content">
             
-                <h2>
-                  Teacher
-                </h2>
+                <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/teacher">
+                  <h2>
+                    Teacher
+                  </h2>
+                </a>
                 
              </div>
               
