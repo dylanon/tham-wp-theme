@@ -3,7 +3,6 @@
 This WordPress theme is built on Bootstrap - getbootstrap.com
 
 To do list:
-- Build Past page
 - Fix crossover on iPad (add menu change back when click on section title)
 - Remove 'category' base from Blog and Reviews (and update navbar)
 - Fix portfolio and portfolio cateogry link aesthetics
