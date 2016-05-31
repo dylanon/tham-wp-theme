@@ -1,0 +1,12 @@
+/*****************************
+ All rights reserved.
+ AllFont.net (c) 2011-2015
+ *****************************/
+@font-face {
+    font-family: 'Arial Black';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arial Black'), local('ArialBlack-Regular'),
+        url(../fonts/arial-black.woff) format('woff'),
+        url(../fonts/arial-black.ttf) format('truetype');
+}
