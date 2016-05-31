@@ -23,81 +23,89 @@
           
           <div class="col-sm-6 square-size">
             
-            <div class="square border-yellow border-rounded">
+            <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/actor">
               
-              <div class="square-content square-background">
-                
-                <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/actor">
+              <div class="square border-yellow border-rounded">
+
+                <div class="square-content square-background">
+
                   <h2 class="h1">
                     Actor
                   </h2>
-                </a>
-                
-             </div>
+
+                </div>
+
+              </div>
               
-            </div>
+            </a>
             
           </div>
           
           <div class="col-sm-6 square-size">
             
-            <div class="square border-yellow border-rounded">
+            <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/creator">
               
-              <div class="square-content square-background">
-            
-                <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/creator">
+              <div class="square border-yellow border-rounded">
+
+                <div class="square-content square-background">
+
                   <h2 class="h1">
                     Creator
                   </h2>
-                </a>
-                
-             </div>
+
+                </div>
+
+              </div>
               
-            </div>
+            </a>
             
           </div>
           
-        </div>
+        </div><!-- .row -->
 
         <div class="row">
           
           <div class="col-sm-6 square-size">
             
-            <div class="square border-yellow border-rounded">
+            <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/director">
               
-              <div class="square-content square-background">
-            
-                <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/director">
+              <div class="square border-yellow border-rounded">
+
+                <div class="square-content square-background">
+
                   <h2 class="h1">
                     Director
                   </h2>
-                </a>
-                
-             </div>
+
+                </div>
+
+              </div>
               
-            </div>
+            </a>
             
           </div>
           
           <div class="col-sm-6 square-size">
             
-            <div class="square border-yellow border-rounded">
+            <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/teacher">
               
-              <div class="square-content square-background">
-            
-                <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/teacher">
+              <div class="square border-yellow border-rounded">
+
+                <div class="square-content square-background">
+
                   <h2 class="h1">
                     Teacher
                   </h2>
-                </a>
-                
-             </div>
+
+                </div>
+
+              </div>
               
-            </div>
+            </a>
             
           </div>
           
-        </div>
+        </div><!-- .row -->
       
         <div class="top-margin"><?php the_content(); ?></div>
         <?php edit_post_link(); ?>

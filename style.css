@@ -520,6 +520,10 @@ html, body {
 	padding-top: 100%;
 }
 
+.square:hover {
+	opacity: 0.85;
+}
+
 .square-content {
 	position:  absolute;
 	top: 0;
@@ -540,6 +544,11 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.square-content:hover h2 {
+	color: #dfb377;
+	text-decoration: underline;
 }
 
 .square-size {
