@@ -562,6 +562,10 @@ html, body {
 	margin-top: 15px;
 }
 
+.no-bottom-margin {
+	margin-bottom: 0;
+}
+
 /* Footer */
 
 .footer {
