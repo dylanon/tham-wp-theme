@@ -2,7 +2,7 @@
 
 <?php get_template_part( 'nav-performance' ); // Navigation bar ?>
 
-    <div class="bottom-padded page-width container">
+    <div class="bottom-padded narrow-width container">
       
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -25,10 +25,10 @@
             
             <div class="square border-yellow border-rounded">
               
-              <div class="square-content">
+              <div class="square-content square-background">
                 
                 <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/actor">
-                  <h2>
+                  <h2 class="h1">
                     Actor
                   </h2>
                 </a>
@@ -43,10 +43,10 @@
             
             <div class="square border-yellow border-rounded">
               
-              <div class="square-content">
+              <div class="square-content square-background">
             
                 <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/creator">
-                  <h2>
+                  <h2 class="h1">
                     Creator
                   </h2>
                 </a>
@@ -65,10 +65,10 @@
             
             <div class="square border-yellow border-rounded">
               
-              <div class="square-content">
+              <div class="square-content square-background">
             
                 <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/director">
-                  <h2>
+                  <h2 class="h1">
                     Director
                   </h2>
                 </a>
@@ -83,10 +83,10 @@
             
             <div class="square border-yellow border-rounded">
               
-              <div class="square-content">
+              <div class="square-content square-background">
             
                 <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/teacher">
-                  <h2>
+                  <h2 class="h1">
                     Teacher
                   </h2>
                 </a>
