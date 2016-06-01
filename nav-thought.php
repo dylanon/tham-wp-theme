@@ -10,7 +10,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img class="taylor-brand" src="<?php bloginfo('template_directory'); ?>/img/logo-white.png" alt="Taylor Hammond" /></a>
+          <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
+            <img class="taylor-brand" src="<?php bloginfo('template_directory'); ?>/img/logo-white.png" alt="Taylor Hammond" />
+            <img class="taylor-brand-horiz" src="<?php bloginfo('template_directory'); ?>/img/logo-white-horiz.png" alt="Taylor Hammond" />
+          </a>
           
         </div>
 

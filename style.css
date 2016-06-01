@@ -324,8 +324,22 @@ a:hover {
 	}
 }
 
-.taylor-brand {
+img.taylor-brand {
 	height: 65px;
+	display: none;
+}
+
+img.taylor-brand-horiz {
+	height: 40px;
+}
+
+@media (min-width: 768px) {
+	img.taylor-brand {
+		display: block;
+	}
+	img.taylor-brand-horiz {
+		display: none;
+	}
 }
 
 @media (min-width: 768px) {
