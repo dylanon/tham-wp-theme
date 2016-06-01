@@ -61,7 +61,7 @@
           <li <?php if ( $pagename == 'present' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present">Present</a></li>
           <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/blog" class="hide-crossover">Thought</a></li>
         </ul>
-         <h1 class="section-heading navbar-right" id="nav-crossover-trigger">Performance</h1>
+         <h1 class="section-heading navbar-right" id="nav-crossback-trigger">Performance</h1>
       </div>
 
     </div>

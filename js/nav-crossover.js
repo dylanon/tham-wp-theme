@@ -1,10 +1,12 @@
 jQuery(document).ready(function($){ /* WordPress loads jQuery in no conflict mode. $ is passed back in here for use within the script. */
   
-  var crossClicked = false;
+  var isTripped = false;
   
   $("#nav-crossover-trigger").mouseenter(function(){
-    if (crossClicked === false) {
+    if ( isTripped === false ) {
       $("#nav-crossover").fadeIn(300);
+    } else {
+      isTripped = false;
     }
   });
   
@@ -12,9 +14,9 @@ jQuery(document).ready(function($){ /* WordPress loads jQuery in no conflict mod
     $("#nav-crossover").fadeOut(300);
   });
   
-  $("#nav-crossover").click(function(){
+  $("#nav-crossback-trigger").click(function(){
+    isTripped = true;
     $("#nav-crossover").fadeOut(300);
-    crossClicked = true;
   });
 
 });

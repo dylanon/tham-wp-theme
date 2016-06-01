@@ -61,7 +61,7 @@
               <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" class="hide-crossover">Performance</a></li>
             </ul>
           </div>
-           <h1 class="section-heading navbar-right">Thought</h1>
+           <h1 class="section-heading navbar-right" id="nav-crossback-trigger">Thought</h1>
         </div>
 
       </div>
