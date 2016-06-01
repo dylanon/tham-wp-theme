@@ -68,3 +68,5 @@
   </nav>
   
 </div>
+
+<div id="page-content"><!-- closed in Footer -->

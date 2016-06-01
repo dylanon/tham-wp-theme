@@ -1,3 +1,5 @@
+</div><!-- #page-content from Master Nav files -->
+      
       <div class="container-fluid footer text-center small">
 
         <p>
