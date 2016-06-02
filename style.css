@@ -330,7 +330,8 @@ img.taylor-brand {
 }
 
 img.taylor-brand-horiz {
-	height: 40px;
+	height: 35px;
+	padding-top: 3px;
 }
 
 @media (min-width: 768px) {
