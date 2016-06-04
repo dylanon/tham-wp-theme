@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?><?php if ( is_front_page() ) { ?>id="custom-front-page"<?php } ?>>
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,6 @@
     <![endif]-->
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php if ( is_front_page() ) { ?>id="front-page-body"<?php } ?>>
   
     <div class="page-wrapper">
