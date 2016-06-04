@@ -1,5 +1,10 @@
 </div><!-- #page-content from Master Nav files -->
-      
+
+<?php if ( is_front_page() ) {
+  // No footer
+} else {
+  // Include footer ?>
+
       <div class="container-fluid footer text-center small">
 
         <p>
@@ -7,6 +12,8 @@
         </p>
 
       </div>
+
+<?php } ?>
 
     </div><!-- .page-wrapper -->
 
