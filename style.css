@@ -613,8 +613,23 @@ body#front-page-body {
 	flex: 1;
 }
 
+#front-page-performance a {
+	text-decoration: none;
+}
+
 #front-page-thought {
 	background-color: #434d69;
 	opacity: 0.95;
 	flex: 1;
+}
+
+.flex-center-contents {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#front-page-body h1 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #fff;
 }
