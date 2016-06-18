@@ -611,26 +611,46 @@ body#front-page-body {
 	background-color: #b55953;
 	opacity: 0.95;
 	flex: 1;
+	position: relative;
 }
 
-#front-page-performance a {
+/* a #front-page-performance {
 	text-decoration: none;
 	opacity: 1;
-}
+} */
 
 #front-page-thought {
 	background-color: #434d69;
 	opacity: 0.95;
 	flex: 1;
+	position: relative;
 }
 
 .flex-center-contents {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+/* 	justify-content: center; */
+/* 	align-items: center; */
 }
 
 #front-page-body h1 {
 	font-family: "Arial Black", Gadget, sans-serif;
 	color: #fff;
+	margin: 0;
+}
+
+.front-page-center-links {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.front-page-performance {
+	bottom: 10px;
+	
+}
+
+.front-page-thought {
+	top: 10px;
 }
