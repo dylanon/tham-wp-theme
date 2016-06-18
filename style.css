@@ -603,16 +603,18 @@ html#custom-front-page {
 
 body#front-page-body {
 	background-color: transparent;
+	display: flex;
+	flex-flow: column;
 }
 
 #front-page-performance {
 	background-color: #b55953;
 	opacity: 0.95;
-	height: 50vh;
+	flex: 1;
 }
 
 #front-page-thought {
 	background-color: #434d69;
 	opacity: 0.95;
-	height: 50vh;
+	flex: 1;
 }

@@ -13,9 +13,9 @@
 
       </div>
 
-<?php } ?>
+  </div><!-- .page-wrapper -->
 
-    </div><!-- .page-wrapper -->
+<?php } ?>
 
     <?php wp_footer(); ?>
 

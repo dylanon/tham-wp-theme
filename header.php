@@ -14,6 +14,6 @@
     <![endif]-->
     <?php wp_head(); ?>
   </head>
-  <body <?php if ( is_front_page() ) { ?>id="front-page-body"<?php } ?>>
-  
-    <div class="page-wrapper">
+  <body <?php if ( is_front_page() ) { ?>id="front-page-body"><?php } else { ?>>
+   
+      <div class="page-wrapper"><?php } ?>
