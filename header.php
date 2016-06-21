@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?><?php if ( is_front_page() ) { ?>id="custom-front-page"<?php } ?>>
+<html <?php language_attributes(); ?><?php if ( is_front_page() ) { ?>id="front-page-html"<?php } ?>>
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
