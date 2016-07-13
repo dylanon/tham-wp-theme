@@ -611,12 +611,23 @@ body#front-page-body {
 	background-color: #b55953;
 	opacity: 0.95;
 	flex: 1;
+	position: relative;
+}
+
+#front-page-performance h1 {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin-bottom: 3px;
 }
 
 #front-page-thought {
 	background-color: #434d69;
 	opacity: 0.95;
 	flex: 1;
+	text-align: center;
 }
 
 #front-page-body a,
