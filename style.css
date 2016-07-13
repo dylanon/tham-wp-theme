@@ -620,7 +620,7 @@ body#front-page-body {
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	margin-bottom: 3px;
+	margin-bottom: 2px;
 }
 
 #front-page-thought {
