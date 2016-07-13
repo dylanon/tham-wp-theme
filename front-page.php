@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<a href="#" id="front-page-performance">
+<a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" id="front-page-performance">
   <div>
     <h1>Performance</h1>
   </div>
 </a>
 
-<a href="#" id="front-page-thought">
+<a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/blog" id="front-page-thought">
   <div>
     <h1>Thought</h1>
   </div>
