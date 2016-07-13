@@ -630,6 +630,27 @@ body#front-page-body {
 	text-align: center;
 }
 
+@media (min-width: 768px) {
+
+	#front-page-body h1 {
+		font-size: 88px;
+	}
+	
+	#front-page-performance,
+	#front-page-thought {
+		opacity: 0;
+		transition: opacity .25s ease-in-out;
+		-moz-transition: opacity .25s ease-in-out;
+		-webkit-transition: opacity .25s ease-in-out;
+	}
+	
+	#front-page-performance:hover,
+	#front-page-thought:hover {
+		opacity: 1;
+	}
+	
+}
+
 #front-page-body a,
 #front-page-body a:visited,
 #front-page-body a:active {
