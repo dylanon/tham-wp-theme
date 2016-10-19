@@ -7,4 +7,7 @@ To do list:
 - Fix portfolio and portfolio cateogry link aesthetics
 - Photo gallery support
 - Build landing page
+- Archive styling
+- User-generated content styling
+- Fix archive outline colours with post counting?
 - Code directions for custom user-built pages (e.g. Present - if user wants columns and/or bordered boxes)
