@@ -4,7 +4,7 @@ This WordPress theme is built on Bootstrap - getbootstrap.com
 
 To do list:
 - Remove 'category' base from Blog and Reviews (and update navbar)
-- Fix portfolio and portfolio cateogry link aesthetics
+- Fix portfolio and portfolio category link aesthetics
 - Photo gallery support
 - Build landing page
 - Archive styling
