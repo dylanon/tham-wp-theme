@@ -79,4 +79,21 @@ function get_custom_cat_template($single_template) { /* Register custom single p
 }
 add_filter( "single_template", "get_custom_cat_template" ) ;
 
+/* Meta Box plugin demo */
+add_filter( 'rwmb_meta_boxes', 'your_prefix_meta_boxes' );
+function your_prefix_meta_boxes( $meta_boxes ) {
+    $meta_boxes[] = array(
+        'title'      => __( 'Test Meta Box', 'textdomain' ),
+        'post_types' => array ( 'post', 'portfolio' ),
+        'fields'     => array(
+						array(
+								'id' => 'editor',
+								'name' => __( 'Editor Field', 'textdomain' ),
+								'type' => 'wysiwyg',
+						),
+        ),
+    );
+    return $meta_boxes;
+}
+
 ?>
