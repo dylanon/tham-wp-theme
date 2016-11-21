@@ -86,9 +86,14 @@ function your_prefix_meta_boxes( $meta_boxes ) {
         'title'      => __( 'Add Additional Content', 'textdomain' ),
         'post_types' => array ( 'portfolio' ), /* Portfolio post type only */
         'fields'     => array(
-						array(
+						array( /* Left box */
 								'id' => 'portfolio-customfield-left',
-								'name' => __( 'Add beneath featured image', 'textdomain' ),
+								'name' => __( 'Add beneath featured image (left box)', 'textdomain' ),
+								'type' => 'wysiwyg',
+						),
+							array( /* Right box */
+								'id' => 'portfolio-customfield-right',
+								'name' => __( 'Add beneath main text content (right box)', 'textdomain' ),
 								'type' => 'wysiwyg',
 						),
         ),

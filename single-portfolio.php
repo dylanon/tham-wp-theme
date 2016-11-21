@@ -41,6 +41,9 @@
 
 				</div>
 				
+				<!-- Meta Box: Beneath main content area -->
+				<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-right' ) ); ?>
+				
 			</div>
 		
 		</div>
