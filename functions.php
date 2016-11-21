@@ -83,12 +83,12 @@ add_filter( "single_template", "get_custom_cat_template" ) ;
 add_filter( 'rwmb_meta_boxes', 'your_prefix_meta_boxes' );
 function your_prefix_meta_boxes( $meta_boxes ) {
     $meta_boxes[] = array(
-        'title'      => __( 'Test Meta Box', 'textdomain' ),
-        'post_types' => array ( 'post', 'portfolio' ),
+        'title'      => __( 'Add Additional Content', 'textdomain' ),
+        'post_types' => array ( 'portfolio' ), /* Portfolio post type only */
         'fields'     => array(
 						array(
-								'id' => 'editor',
-								'name' => __( 'Editor Field', 'textdomain' ),
+								'id' => 'portfolio-customfield-left',
+								'name' => __( 'Add beneath featured image', 'textdomain' ),
 								'type' => 'wysiwyg',
 						),
         ),

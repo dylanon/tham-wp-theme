@@ -19,6 +19,8 @@
 				<div class="featured-image-caption">
 					<?php the_post_thumbnail_caption() ?>
 				</div>
+				<!-- Meta Box: Editor -->
+				<?php echo rwmb_meta( 'editor' ); ?>
 			</div>
 			
 			<div class="col-md-5">
