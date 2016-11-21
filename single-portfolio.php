@@ -20,7 +20,7 @@
 					<?php the_post_thumbnail_caption() ?>
 				</div>
 				<!-- Meta Box: Editor -->
-				<?php echo rwmb_meta( 'editor' ); ?>
+				<?php echo rwmb_meta( 'portfolio-customfield-left' ); ?>
 			</div>
 			
 			<div class="col-md-5">
