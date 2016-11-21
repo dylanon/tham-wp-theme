@@ -19,8 +19,8 @@
 				<div class="featured-image-caption">
 					<?php the_post_thumbnail_caption() ?>
 				</div>
-				<!-- Meta Box: Editor -->
-				<?php echo rwmb_meta( 'portfolio-customfield-left' ); ?>
+				<!-- Meta Box: Beneath featured image -->
+				<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-left' ) ); ?>
 			</div>
 			
 			<div class="col-md-5">
