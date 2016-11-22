@@ -467,7 +467,7 @@ html, body {
 
 /* Featured Images */
 
-.featured-image img {
+.featured-image > img {
 	display: block;
 /*   max-width: 100%; */
 	width: 100%; /* Image takes up full width available */
