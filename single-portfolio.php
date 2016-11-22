@@ -20,7 +20,9 @@
 					<?php the_post_thumbnail_caption() ?>
 				</div>
 				<!-- Meta Box: Beneath featured image -->
-				<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-left' ) ); ?>
+				<div class="portfolio-meta-box">
+					<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-left' ) ); ?>
+				</div>
 			</div>
 			
 			<div class="col-md-5">
@@ -42,7 +44,9 @@
 				</div>
 				
 				<!-- Meta Box: Beneath main content area -->
-				<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-right' ) ); ?>
+				<div class="portfolio-meta-box">
+					<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-right' ) ); ?>
+				</div>
 				
 			</div>
 		
