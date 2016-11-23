@@ -8,16 +8,8 @@
 
         <h1 class="text-center no-bottom-margin"><?php the_title(); ?> Projects</h1>
       
-        <?php if ( has_post_thumbnail() ) { ?>
-
-          <div class="featured-image">
-            <?php the_post_thumbnail( 'full', array( 'class' => 'border-red' ) ) ?>
-            <div class="featured-image-caption">
-              <?php the_post_thumbnail_caption() ?>
-            </div>
-          </div>
-
-        <?php } ?>
+        <div class="top-margin"><?php the_content(); ?></div>
+        <div class="text-right"><?php edit_post_link(); ?></div>
       
           <div class="row">
 
@@ -103,8 +95,17 @@
 
           </div><!-- .row -->
       
-        <div class="top-margin"><?php the_content(); ?></div>
-        <?php edit_post_link(); ?>
+        <?php if ( has_post_thumbnail() ) { ?>
+        <div class="top-margin">
+          <div class="featured-image">
+            <?php the_post_thumbnail( 'full', array( 'class' => 'border-red' ) ) ?>
+            <div class="featured-image-caption">
+              <?php the_post_thumbnail_caption() ?>
+            </div>
+          </div>
+        </div>
+
+        <?php } ?>
 
       <?php endwhile; else: ?>
         <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
