@@ -543,8 +543,9 @@ html, body {
 	padding-top: 100%;
 }
 
-.square:hover {
-	opacity: 0.85;
+.square-content:hover {
+	-webkit-filter: none; /* Colorize: Vendor prefix */
+	filter: none; /* Colorize: Remove grayscale filter on hover */
 }
 
 .square-content {
@@ -553,6 +554,9 @@ html, body {
 	left: 0;
 	bottom: 0;
 	right: 0;
+	-webkit-filter: grayscale(1); /* Colorize: Vendor prefix */
+	filter: grayscale(1); /* Colorize: Make background images grayscale */
+	transition: all .3s linear; /* Colorize: Set transitions */
 }
 
 .square-background {
@@ -571,9 +575,15 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
+/* Underline portfolio section links on hover */
 .square-content:hover h2 {
-	color: #dfb377;
+	text-decoration: underline;
 }
+
+/* Colorize: Uncomment to enable link colouring on portfolio section hover. */
+/* .square-content:hover h2 { 
+	color: #dfb377;
+} */
 
 .square-size {
 	padding: 20px 20px 20px 20px; /* Left and right sets square size padding */
