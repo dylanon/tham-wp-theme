@@ -563,6 +563,8 @@ html, body {
 
 .square-content h2 {
 	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 26px;
 	position: absolute;
   top: 50%;
   left: 50%;

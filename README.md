@@ -17,4 +17,3 @@ Dependencies:
 - plugin: Portfolio Post Type by Devin Price
 
 Known issues:
-- Past page: Portfolio section tiles do not resize smaller on Android (LG G3, Chrome)
