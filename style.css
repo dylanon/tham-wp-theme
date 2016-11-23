@@ -526,8 +526,15 @@ html, body {
 
 .square {
 	position: relative;
-	width: 100%;
-/* 	margin: 10px 0px 25px 0px; */
+	width: 50%;
+	margin: 0 auto 0 auto;
+}
+
+@media (min-width: 993px) { /* Display portfolio sections larger and in a row on large screens */
+	.square {
+		position: relative;
+		width: 100%;
+	}
 }
 
 .square:before {
