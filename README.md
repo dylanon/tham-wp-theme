@@ -17,3 +17,12 @@ Dependencies:
 - plugin: Portfolio Post Type by Devin Price
 
 Known issues:
+
+How to set images on Past page:
+- Use these custom fields when editing the Past page:
+  - Section Image - Actor
+  - Section Image - Creator
+  - Section Image - Director
+  - Section Image - Teacher
+- Simply paste a direct link to your desired image in the Value field (should end with .jpg, .png, or another image file type) and click Update.
+- Note: Only edit the Value field - Changing the Name field will break this functionality.

@@ -19,7 +19,7 @@
 
                 <div class="square border-yellow border-rounded">
 
-                  <div class="square-content square-background">
+                  <div class="square-content square-background" style="background: url('<?php echo get_post_meta($post->ID, 'Section Image - Actor', true); ?>'); 	background-size: cover; background-repeat: no-repeat;">
 
                     <h2 class="h1">
                       Actor
@@ -39,7 +39,7 @@
 
                 <div class="square border-yellow border-rounded">
 
-                  <div class="square-content square-background">
+                  <div class="square-content square-background" style="background: url('<?php echo get_post_meta($post->ID, 'Section Image - Creator', true); ?>'); 	background-size: cover; background-repeat: no-repeat;">
 
                     <h2 class="h1">
                       Creator
@@ -59,7 +59,7 @@
 
                 <div class="square border-yellow border-rounded">
 
-                  <div class="square-content square-background">
+                  <div class="square-content square-background" style="background: url('<?php echo get_post_meta($post->ID, 'Section Image - Director', true); ?>'); 	background-size: cover; background-repeat: no-repeat;">
 
                     <h2 class="h1">
                       Director
@@ -79,7 +79,7 @@
 
                 <div class="square border-yellow border-rounded">
 
-                  <div class="square-content square-background">
+                  <div class="square-content square-background" style="background: url('<?php echo get_post_meta($post->ID, 'Section Image - Teacher', true); ?>'); 	background-size: cover; background-repeat: no-repeat;">
 
                     <h2 class="h1">
                       Teacher

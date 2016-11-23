@@ -559,11 +559,12 @@ html, body {
 	transition: all .3s linear; /* Colorize: Set transitions */
 }
 
-.square-background {
+/* Used to use this for background for portfolio sections. Now this is included inline in order to integrate with WP custom fields. */
+/* .square-background {
 	background: url('img/project.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-}
+} */
 
 .square-content h2 {
 	color: #fff;
