@@ -575,6 +575,8 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+	-webkit-filter: drop-shadow(1px 1px 10px #000000); /* Vendor prefix */
+  filter: drop-shadow(1px 1px 10px #000000); /* Drop shadow so links are readable */
 }
 
 /* Underline portfolio section links on hover */
