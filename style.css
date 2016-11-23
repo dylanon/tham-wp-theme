@@ -527,6 +527,7 @@ html, body {
 .square {
 	position: relative;
 	width: 50%;
+	min-width: 158px; /* Keep box big enough for text */
 	margin: 0 auto 0 auto;
 }
 
