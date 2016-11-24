@@ -17,6 +17,8 @@ This WordPress theme is built on Bootstrap - getbootstrap.com
 4. Documentation
   - Added dependencies list
   - Added "How to set images on Past page"
+5. Blog Posts and Reviews
+  - Removed timestamps
 
 ## To do list
 - Remove 'category' base from Blog and Reviews (and update navbar)
