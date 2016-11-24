@@ -6,120 +6,67 @@
 
 <div class="bottom-padded container">
 
+	<!-- Start the WordPress Loop -->
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<!-- Check which post layout to use -->
-	<?php $portfoliolayout = get_post_meta($post->ID, 'Which box should be wider? (left or right)', true); ?>
-	<?php if ( $portfoliolayout === 'right' ) { ?>
+		<!-- Get custom field for post layout & store as variable -->
+		<?php $portfoliolayout = get_post_meta($post->ID, 'Which box should be wider? (left or right)', true); ?>
 
-<!-- Layout 2: Right featured image -->
+			<!-- Layout 2: Right featured image -->
 	
-	<div class="portfolio-post">
+			<div class="portfolio-post">
 
-		<div class="row">
+				<div class="row">
 			
-			<?php if ( has_post_thumbnail() ) { ?>
+					<?php if ( has_post_thumbnail() ) { ?>
 			
-			<div class="col-md-5 featured-image">
-				<?php the_post_thumbnail( 'full', array( 'class' => 'border-red' ) ) ?>
-				<div class="featured-image-caption">
-					<?php the_post_thumbnail_caption() ?>
-				</div>
-				<!-- Meta Box: Beneath featured image -->
-				<div class="portfolio-meta-box">
-					<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-left' ) ); ?>
-				</div>
-			</div>
+						<!-- Check layout for left box (featured image) -->
+						<div class="col-md-<?php if ( $portfoliolayout === 'right' ) { ?>5<?php } else {?>7<?php } ?> featured-image">
+							<?php the_post_thumbnail( 'full', array( 'class' => 'border-red' ) ) ?>
+							<div class="featured-image-caption">
+								<?php the_post_thumbnail_caption() ?>
+							</div>
+							<!-- Meta Box: Beneath featured image -->
+							<div class="portfolio-meta-box">
+								<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-left' ) ); ?>
+							</div>
+						</div>
 			
-			<div class="col-md-7">
+						<!-- Check layout for right box (main text content) -->
+						<div class="col-md-<?php if ( $portfoliolayout === 'right' ) { ?>7<?php } else {?>5<?php } ?>">
 				
-			<?php } else { ?>
+					<?php } else { ?>
 			
-			<div class="col-md-12">
+						<div class="col-md-12"><!-- If no featured image -->
 			
-			<?php } ?>
+					<?php } ?>
 			
-				<div class="portfolio-content-area">
+							<div class="portfolio-content-area">
 
-					<h1 class="text-uppercase"><?php the_title(); ?></h1>
-					<span class="post-wrapper"><?php the_content('(Read more ...)'); ?></span>
-					<p class="small text-right text-uppercase img-floats-fix"><br />
-						<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
-					</p>
+								<h1 class="text-uppercase"><?php the_title(); ?></h1>
+								<span class="post-wrapper"><?php the_content('(Read more ...)'); ?></span>
+								<p class="small text-right text-uppercase img-floats-fix"><br />
+									<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
+								</p>
 
-				</div>
+							</div>
+
+							<!-- Meta Box: Beneath main content area -->
+							<div class="portfolio-meta-box">
+								<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-right' ) ); ?>
+							</div>
 				
-				<!-- Meta Box: Beneath main content area -->
-				<div class="portfolio-meta-box">
-					<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-right' ) ); ?>
-				</div>
-				
-			</div>
+						</div><!-- .col-md-12 when there is no featured image -->
 		
-		</div>
+				</div><!-- .row -->
 
-	</div> <!-- .portfolio-post -->
-
-<!-- End Layout 2: Right featured image -->
-
-	<?php } else { ?>
-
-<!-- Layout 1: Left featured image	 -->
-	
-	<div class="portfolio-post">
-
-		<div class="row">
-			
-			<?php if ( has_post_thumbnail() ) { ?>
-			
-			<div class="col-md-7 featured-image">
-				<?php the_post_thumbnail( 'full', array( 'class' => 'border-red' ) ) ?>
-				<div class="featured-image-caption">
-					<?php the_post_thumbnail_caption() ?>
-				</div>
-				<!-- Meta Box: Beneath featured image -->
-				<div class="portfolio-meta-box">
-					<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-left' ) ); ?>
-				</div>
-			</div>
-			
-			<div class="col-md-5">
-				
-			<?php } else { ?>
-			
-			<div class="col-md-12">
-			
-			<?php } ?>
-			
-				<div class="portfolio-content-area">
-
-					<h1 class="text-uppercase"><?php the_title(); ?></h1>
-					<span class="post-wrapper"><?php the_content('(Read more ...)'); ?></span>
-					<p class="small text-right text-uppercase img-floats-fix"><br />
-						<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
-					</p>
-
-				</div>
-				
-				<!-- Meta Box: Beneath main content area -->
-				<div class="portfolio-meta-box">
-					<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-right' ) ); ?>
-				</div>
-				
-			</div>
-		
-		</div>
-
-	</div> <!-- .portfolio-post -->
-
-<!-- End Layout 1: Left featured image -->
-
-<?php } ?> <!-- End post layout picker -->
+			</div><!-- .portfolio-post -->
 
 	<?php endwhile; else : ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 	<?php endif; ?>
+	<!-- End the Loop -->
 	
-</div>
+</div><!-- bottom-padded container -->
 
 <?php get_footer(); ?>
