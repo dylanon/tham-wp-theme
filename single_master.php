@@ -20,7 +20,7 @@
 		<span class="post-wrapper"><?php the_content('(Read more ...)'); ?></span>
 		<p class="small text-right text-uppercase img-floats-fix"><br />
 			<?php the_tags( 'Tagged in: ' ); ?><br />
-			<?php the_time('l F j, Y'); ?>&nbsp;&nbsp;|&nbsp;&nbsp;<?php the_time() ?><br /><br />
+			<?php the_time('l F j, Y'); ?><br /><br />
 			<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
 		</p>
 		<hr />
