@@ -30,7 +30,7 @@ div.aligncenter {
 }
 
 .alignright {
-    float:right;
+    float: right;
     margin: 5px 0 20px 20px;
 }
 
@@ -463,6 +463,14 @@ html, body {
 
 .yellow-border {
 	border-color: #dfb377;
+}
+
+@media (min-width: 450px) { /* Make featured image smaller on larger devices */
+	.featured-image-blog-larger-devices {
+		width: 50%;
+		float: right;
+		margin-left: 20px; /* Add left margin for text wrapping. */
+	}
 }
 
 /* Featured Images */
