@@ -9,8 +9,8 @@
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <!-- Check which post layout to use -->
-	<?php $portfoliolayout = get_post_meta($post->ID, 'Featured Image Orientation', true); ?>
-	<?php if ( $portfoliolayout === 'portrait' ) { ?>
+	<?php $portfoliolayout = get_post_meta($post->ID, 'Which box should be wider? (left or right)', true); ?>
+	<?php if ( $portfoliolayout === 'right' ) { ?>
 
 <!-- Layout 2: Right featured image -->
 	
