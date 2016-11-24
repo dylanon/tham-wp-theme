@@ -6,6 +6,8 @@
 
     <div class="bottom-padded container">
       
+      <h1 class="text-center mobile-only">Reviews</h1>
+      
       <?php $i=0; // counter (for row display) ?>
       <?php $j=0; // counter (for alternating colours) ?>
       

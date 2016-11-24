@@ -450,7 +450,13 @@ html, body {
 	padding-top: 5px;
 }
 
-.post-date {
+@media (min-width: 768px) { /* Only display on devices that use the collapsed mobile menu */
+	.mobile-only {
+		display: none;
+	}
+}
+
+.post-date { /* Duplicate? See above */
 	font-size: 18px;
 	color: #b55953;
 }

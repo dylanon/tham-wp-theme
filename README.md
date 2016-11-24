@@ -1,6 +1,6 @@
 # tham-wp-theme
 
-This WordPress theme is built on Bootstrap - getbootstrap.com
+This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 
 ## Changelog (since initial sample site):
 1. Portfolio items (single view)
@@ -18,8 +18,11 @@ This WordPress theme is built on Bootstrap - getbootstrap.com
   - Added dependencies list
   - Added "How to set images on Past page"
 5. Blog Posts and Reviews
-  - Removed timestamps
-  - Featured image now displays at half the page's width, aligned to the top right corner (larger devices)
+  - Single posts
+    - Removed timestamps
+    - Featured image now displays at half the page's width, aligned to the top right corner (larger devices)
+  - Category pages
+    - Added page title ("Blog" "Reviews") on mobile devices because of collapsed navigation menu
 
 ## To do list
 - Remove 'category' base from Blog and Reviews (and update navbar)
@@ -37,7 +40,7 @@ This WordPress theme is built on Bootstrap - getbootstrap.com
 - plugin: FooBox Image Lightbox
 - plugin: Portfolio Post Type by Devin Price
 
-## Known issues:
+### Known issues:
 No known issues right now.
 
 ### How to set images on Past page:
