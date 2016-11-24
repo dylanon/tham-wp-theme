@@ -19,6 +19,7 @@ This WordPress theme is built on Bootstrap - getbootstrap.com
   - Added "How to set images on Past page"
 5. Blog Posts and Reviews
   - Removed timestamps
+  - Featured image now displays at half the page's width, aligned to the top right corner (larger devices)
 
 ## To do list
 - Remove 'category' base from Blog and Reviews (and update navbar)
