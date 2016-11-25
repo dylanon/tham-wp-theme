@@ -23,6 +23,8 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
     - Featured image now displays at half the page's width, aligned to the top right corner (larger devices)
   - Category pages
     - Added page title ("Blog" "Reviews") on mobile devices because of collapsed navigation menu
+6. About & CV pages
+  - Narrowed the content area (Use "About" and "CV" page templates in WordPress backend)
 
 ## To do list
 - Remove 'category' base from Blog and Reviews (and update navbar)
