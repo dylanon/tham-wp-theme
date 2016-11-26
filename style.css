@@ -686,6 +686,8 @@ body#front-page-body {
 	#front-page-performance:hover,
 	#front-page-thought:hover {
 		opacity: 1;
+		-webkit-filter: drop-shadow(1px 1px 50px #000000); /* Vendor prefix */
+		filter: drop-shadow(1px 1px 50px #000000);
 	}
 	
 	#front-page-moutheyes { /* Add mouth and eyes as hidden image on load */
