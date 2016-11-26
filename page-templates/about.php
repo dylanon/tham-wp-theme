@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<?php get_template_part( 'nav-performance' ); // Navigation bar ?>
+<?php get_template_part( 'nav-thought' ); // Navigation bar ?>
 
     <div class="bottom-padded narrow-width container">
       
