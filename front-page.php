@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<div id="front-page-moutheyes"></div>
+
 <a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" id="front-page-performance">
   <div>
     <h1>Performance</h1>

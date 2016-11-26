@@ -7,6 +7,7 @@ function taylorhammond_enqueue_style() {
 function taylorhammond_enqueue_script() {
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), true );
 	wp_enqueue_script( 'nav-crossover-js', get_template_directory_uri() . '/js/nav-crossover.js', array( 'jquery' ), true );
+	wp_enqueue_script( 'front-page-js', get_template_directory_uri() . '/js/front-page.js', array( 'jquery' ), true );
 }
 
 add_action( 'wp_enqueue_scripts', 'taylorhammond_enqueue_style' );
