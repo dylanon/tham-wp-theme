@@ -646,7 +646,7 @@ body#front-page-body {
 
 #front-page-performance {
 	background-color: #b55953;
-	opacity: 0.95;
+	opacity: 0.8;
 	flex: 1;
 	position: relative;
 }
@@ -662,7 +662,7 @@ body#front-page-body {
 
 #front-page-thought {
 	background-color: #434d69;
-	opacity: 0.95;
+	opacity: 0.8;
 	flex: 1;
 	text-align: center;
 }
