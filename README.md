@@ -25,6 +25,10 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
     - Added page title ("Blog" "Reviews") on mobile devices because of collapsed navigation menu
 6. About & CV pages
   - Narrowed the content area (Use "About" and "CV" page templates in WordPress backend)
+7. Landing page
+  - Added photography
+  - Added photography 'animation'
+  - Adjusted hover transition times
 
 ## To do list
 - Remove 'category' base from Blog and Reviews (and update navbar)
