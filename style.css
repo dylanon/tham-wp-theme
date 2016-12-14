@@ -726,6 +726,32 @@ body#front-page-body {
 
 /* FooGallery settings: Spacing 5px | Alignment center | Width 125px | Heigh 125px | Border Style Plain Rounded */
 
+/* Comments Styles */
+#comments {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#comments ol,
+#comments ul {
+	list-style: none;
+	padding: 0 40px 0 40px;
+}
+
+li.comment.depth-1 > div.comment-body > p {
+	padding: 10px;
+}
+
+li.comment.depth-1 > div.comment-body > p {
+	border: 4px solid #dfb377;
+}
+
+li.comment.depth-1:nth-of-type(even) > div.comment-body > p {
+	border: 4px solid #434d69;
+}
+
+
 /* a #front-page-performance {
 	text-decoration: none;
 	opacity: 1;
