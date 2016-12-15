@@ -14,7 +14,7 @@
  *
  * @see Walker
  */
-class Walker_Comment extends Walker {
+class Taylor_Comment_Walker extends Walker_Comment {
 
 	/**
 	 * What the class handles.

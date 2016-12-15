@@ -30,7 +30,12 @@ if ( post_password_required() ) {
 
 		<ol class="comment-list">
 			<?php
+			
+				// Register Custom Comment Walker
+        require_once('Taylor_Comment_Walker.php');
+			
 				wp_list_comments( array(
+					'walker'			=> new Taylor_Comment_Walker(),
 					'style'       => 'ol',
 					'short_ping'  => true,
 					'avatar_size' => 21, // Originally 42
