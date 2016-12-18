@@ -30,7 +30,8 @@
 
 	<?php if ( have_comments() ) : ?>
 
-	<h2><?php comments_number(); ?></h2>
+<!-- 	<h2 class="text-center"><?php // comments_number(); ?></h2> Uncomment to show number of comments -->
+	<h2 class="text-center">Comments</h2>
 
 	<ul class="media-list">
 		<?php wp_list_comments( array( 'callback' => 'bootstrap_comment' ) ); ?>
