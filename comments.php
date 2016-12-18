@@ -1,65 +1,123 @@
 <?php
 /**
- * The template for displaying comments
+ * The template for displaying Comments.
  *
  * The area of the page that contains both current comments
- * and the comment form.
+ * and the comment form. The actual display of comments is
+ * handled by a callback to bootstrap_comment() which is
+ * located in the functions.php file.
  *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * @package 	WordPress
+ * @subpackage 	Bootstrap 3.3.7
+ * @author		Babobski
  */
-
-/*
- * If the current post is protected by a password and
- * the visitor has not yet entered the password we will
- * return early without loading the comments.
- */
-if ( post_password_required() ) {
-	return;
-}
 ?>
-
-<hr />
-<div id="comments" class="comments-area">
-
-	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title text-center">Comments</h2>
-
-		<?php the_comments_navigation(); ?>
-
-		<ol class="comment-list">
-			<?php
-			
-				// Register Custom Comment Walker
-        require_once('Taylor_Comment_Walker.php');
-			
-				wp_list_comments( array(
-					'walker'			=> new Taylor_Comment_Walker(),
-					'style'       => 'ol',
-					'short_ping'  => true,
-					'avatar_size' => 21, // Originally 42
-					'reverse_top_level' => true, // Show comments in reverse chronological order
-				) );
-			?>
-		</ol><!-- .comment-list -->
-
-		<?php the_comments_navigation(); ?>
-
-	<?php endif; // Check for have_comments(). ?>
+<div id="comments">
+	<?php if ( post_password_required() ) : ?>
+	<p>This post is password protected. Enter the password to view any comments</p>
+</div>
 
 	<?php
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+			/* Stop the rest of comments.php from being processed,
+			 * but don't kill the script entirely -- we still have
+			 * to fully load the template.
+			 */
+			return;
+		endif;
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'twentysixteen' ); ?></p>
+
+	<?php // You can start editing here -- including this comment! ?>
+
+	<?php if ( have_comments() ) : ?>
+
+	<h2><?php comments_number(); ?></h2>
+
+	<ul class="media-list">
+		<?php wp_list_comments( array( 'callback' => 'bootstrap_comment' ) ); ?>
+	</ul>
+
+	<?php
+		/* If there are no comments and comments are closed, let's leave a little note, shall we?
+		 * But we don't want the note on pages or post types that do not support comments.
+		 */
+		elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) :
+	?>
+	
+	<p><?php echo __('Comments are closed', 'wp_babobski')?></p>
+	
 	<?php endif; ?>
 
 	<?php
-		comment_form( array(
-			'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
-			'title_reply_after'  => '</h2>',
-		) );
+	/*
+	 * Adding bootstrap support to comment form,
+	 * and some form validation using javascript.
+	 */
+	
+	ob_start();
+	$commenter = wp_get_current_commenter();
+	$req = true;
+	$aria_req = ( $req ? " aria-required='true'" : '' );
+	
+	$comments_arg = array(
+		'form'	=> array(
+			'class' => 'form-horizontal'
+			),
+		'fields' => apply_filters( 'comment_form_default_fields', array(
+				'autor' 				=> '<div class="form-group">' . '<label for="author">' . __( 'Name', 'wp_babobski' ) . '</label> ' . ( $req ? '<span>*</span>' : '' ) .
+										'<input id="author" name="author" class="form-control" type="text" value="" size="30"' . $aria_req . ' />'.
+										'<p id="d1" class="text-danger"></p>' . '</div>',
+				'email'					=> '<div class="form-group">' .'<label for="email">' . __( 'Email', 'wp_babobski' ) . '</label> ' . ( $req ? '<span>*</span>' : '' ) .
+										'<input id="email" name="email" class="form-control" type="text" value="" size="30"' . $aria_req . ' />'.
+										'<p id="d2" class="text-danger"></p>' . '</div>',
+				'url'					=> '')),
+				'comment_field'			=> '<div class="form-group">' . '<label for="comment">' . __( 'Comment', 'wp_babobski' ) . '</label><span>*</span>' .
+										'<textarea id="comment" class="form-control" name="comment" rows="3" aria-required="true"></textarea><p id="d3" class="text-danger"></p>' . '</div>',
+				'comment_notes_after' 	=> '',
+				'class_submit'			=> 'btn btn-default'
+			); ?>
+	<?php comment_form($comments_arg);
+	echo str_replace('class="comment-form"','class="comment-form" name="commentForm" onsubmit="return validateForm();"',ob_get_clean());
 	?>
-
-</div><!-- .comments-area -->
+	
+		<script>
+			/* basic javascript form validation */
+			function validateForm() {
+			var form 	=  document.forms["commentForm"];
+				x 		= form["author"].value,
+				y 		= form["email"].value,
+				z 		= form["comment"].value,
+				flag 	= true,
+				d1 		= document.getElementById("d1"),
+				d2 		= document.getElementById("d2"),
+				d3 		= document.getElementById("d3");
+				
+			if (x == null || x == "") {
+				d1.innerHTML = "<?php echo __('Name is required', 'wp_babobski'); ?>";
+				z = false;
+			} else {
+				d1.innerHTML = "";
+			}
+			
+			if (y == null || y == "") {
+				d2.innerHTML = "<?php echo __('Email is required', 'wp_babobski'); ?>";
+				z = false;
+			} else {
+				d2.innerHTML = "";
+			}
+			
+			if (z == null || z == "") {
+				d3.innerHTML = "<?php echo __('Comment is required', 'wp_babobski'); ?>";
+				z = false;
+			} else {
+				d3.innerHTML = "";
+			}
+			
+			if (z == false) {
+				return false;
+			}
+			
+		}
+	</script>
+	
+	
+</div><!-- #comments -->

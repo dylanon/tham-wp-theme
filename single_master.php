@@ -23,8 +23,8 @@
 			<?php the_time('l F j, Y'); ?><br /><br />
 			<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
 		</p>
-		<?php comments_template(); ?>
 		<hr />
+		<?php comments_template(); ?>
 
 	</div> <!-- .blog-post -->
 
