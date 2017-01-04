@@ -111,9 +111,9 @@ function bootstrap_comment( $comment, $args, $depth ) {
 				<?php echo get_avatar( $comment, 52 ); // Set avatar size here ?>
 			</div>
 			<div class="media-body">
-				<p class="media-heading"><em><?php comment_author_link() ?></em>&nbsp;-
-				<time><a href="#comment-<?php comment_ID() ?>" pubdate><?php comment_date() ?> at <?php comment_time() ?></a></time></p>
-				<?php comment_text() ?>
+				<p class="media-heading"><em><?php comment_author_link(); ?></em>&nbsp;-
+				<time><a href="#comment-<?php comment_ID(); ?>" pubdate><?php comment_date(); ?> at <?php comment_time(); ?></a></time></p>
+				<div class="comment-paragraph"><?php comment_text(); ?></div>
 			</div>
 		<?php endif;
 	}

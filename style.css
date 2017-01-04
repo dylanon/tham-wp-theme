@@ -728,9 +728,27 @@ body#front-page-body {
 
 /* Comments Styles */
 #comments {
-	max-width: 600px;
+	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#comments li.media { /* Avatar spacing */
+	margin-top: 20px;
+}
+
+#comments .comment-paragraph p { /* Comment paragraph size and spacing */
+	margin-bottom: 0;
+	font-size: 95%;
+}
+
+#comments .media-left { /* Adjust avatar placement */
+	padding-top: 6px;
+}
+
+#comments p.media-heading { /* Author, date, time size and spacing */
+	font-size: 80%;
+	margin-bottom: 0;
 }
 
 #comments ol,
