@@ -2,7 +2,11 @@
 
 This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 
-## Changelog (since initial sample site):
+## Changelog
+### v1.2
+1. Comments now supported on the blog.
+
+### v1.1
 1. Portfolio items (single view)
   - Support for 2 custom content boxes
   - Support for alternative layout (use custom field to specify if left or right content box should be widest)
