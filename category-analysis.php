@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php $mysection = 'reviews'; ?>
+<?php $mysection = 'analysis'; ?>
 
 <?php get_template_part( 'nav-thought' ); // Navigation bar ?>
 

@@ -58,7 +58,7 @@
               <li <?php if ( $pagename == 'research' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/research">Research</a></li>
             </ul>
             <ul class="nav navbar-nav nav-links navbar-right">
-              <li <?php if ($mysection == 'reviews') { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/reviews">Reviews</a></li>
+              <li <?php if ($mysection == 'analysis') { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/analysis">Analysis</a></li>
               <li <?php if ( $pagename == 'cv' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/cv">CV</a></li>
               <li <?php if ( $pagename == 'about' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/about">About</a></li>
               <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" class="hide-crossover">Performance</a></li>
