@@ -5,6 +5,7 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 ## Changelog
 ### v1.2
 1. Comments now supported on the blog.
+2. *Reviews* section changed to *Analysis*
 
 ### v1.1
 1. Portfolio items (single view)
