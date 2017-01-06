@@ -8,6 +8,7 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 2. *Reviews* section changed to *Analysis*
 3. Bugfix: Posts in *Analysis* now light up the appropriate nav link in single post view.
 4. Consolidated single post view template files and rewrote PHP to show active category in nav for single posts and category views (*Blog* and *Analysis*).
+5. Fix permalink structure, specifically for portfolio streams. E.g. When *Actor* is clicked, brings user to website.ca/past/actor.
 
 ### v1.1
 1. Portfolio items (single view)

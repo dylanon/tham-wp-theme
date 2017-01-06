@@ -15,7 +15,7 @@
 
             <div class="col-md-3 square-size">
 
-              <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/actor">
+              <a href="<?php get_bloginfo( ‘template_url’ ); ?>/past/actor">
 
                 <div class="square border-yellow border-rounded">
 
@@ -35,7 +35,7 @@
 
             <div class="col-md-3 square-size">
 
-              <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/creator">
+              <a href="<?php get_bloginfo( ‘template_url’ ); ?>/past/creator">
 
                 <div class="square border-yellow border-rounded">
 
@@ -55,7 +55,7 @@
 
             <div class="col-md-3 square-size">
 
-              <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/director">
+              <a href="<?php get_bloginfo( ‘template_url’ ); ?>/past/director">
 
                 <div class="square border-yellow border-rounded">
 
@@ -75,7 +75,7 @@
 
             <div class="col-md-3 square-size">
 
-              <a href="<?php get_bloginfo( ‘template_url’ ); ?>/portfolio_category/teacher">
+              <a href="<?php get_bloginfo( ‘template_url’ ); ?>/past/teacher">
 
                 <div class="square border-yellow border-rounded">
 

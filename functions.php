@@ -118,4 +118,9 @@ function bootstrap_comment( $comment, $args, $depth ) {
 		<?php endif;
 	}
 
+function custom_rewrite_rule() { // Rewrite URLs for portfolio category views to follow .../past/%portfolio_category%/
+  add_rewrite_rule('^past/([^/]*)$', 'index.php?portfolio_category=$matches[1]', 'top');
+}
+add_action('init', 'custom_rewrite_rule');
+
 ?>
