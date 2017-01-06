@@ -43,7 +43,7 @@
 				<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
 			</p>
 			<hr />
-			<?php comments_template(); ?>
+			<?php if ( $postcat_blog ) { comments_template(); } ?>
 
 		</div> <!-- .blog-post -->
 
