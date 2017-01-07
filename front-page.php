@@ -8,7 +8,7 @@
   </div>
 </a>
 
-<a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/blog" id="front-page-thought">
+<a href="<?php get_bloginfo( ‘template_url’ ); ?>/blog" id="front-page-thought">
   <div>
     <h1>Thought</h1>
   </div>
