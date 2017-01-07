@@ -433,6 +433,7 @@ html, body {
 	margin-top: 5px;
 	margin-bottom: 20px;
 	padding: 5px 15px 5px 15px;
+	position: relative;
 }
 
 .blog-post-preview h1 {
@@ -476,6 +477,24 @@ html, body {
 		width: 50%;
 		float: right;
 		margin-left: 20px; /* Add left margin for text wrapping. */
+	}
+}
+
+@media (min-width: 992px) { /* Large devices only */
+	.posts-view-featured-image { /* Featured images on posts view pages (post categories and portfolio archive) */
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		opacity: 0;
+		transition: opacity 0.15s;
+	}
+	.posts-view-featured-image:hover {
+		opacity: 1;
 	}
 }
 
