@@ -19,7 +19,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav nav-links navbar-right">
-        <!-- Make 'Past' page and all portfolio items light up the nav bar. -->
+        <!-- Make 'Past' page and all portfolio items light up 'Past' in the nav bar. -->
         <li <?php if ( $pagename == 'past' or $mysection == 'past' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/past">Past</a></li>
         <li <?php if ( $pagename == 'present' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present">Present</a></li>
         <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/blog" class="hide-crossover">Thought</a></li>

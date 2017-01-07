@@ -9,6 +9,7 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 3. Bugfix: Posts in *Analysis* now light up the appropriate nav link in single post view.
 4. Consolidated single post view template files and rewrote PHP to show active category in nav for single posts and category views (*Blog* and *Analysis*).
 5. Fix permalink structure, specifically for portfolio streams. E.g. When *Actor* is clicked, brings user to website.ca/past/actor.
+6. Better solution for choosing portfolio post layouts. Select a template from *Page Attributes* - No more wrestling with custom fields and values! (Made possible with WordPress 4.7)
 
 ### v1.1
 1. Portfolio items (single view)
@@ -41,6 +42,7 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 ## Documentation
 
 ### Dependencies:
+- WordPress 4.7 or higher
 - plugin: Meta Box
 - plugin: FooGallery
 - plugin: FooBox Image Lightbox
