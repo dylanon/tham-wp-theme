@@ -59,3 +59,10 @@ No known issues right now.
   - Section Image - Teacher
 - Simply paste a direct link to your desired image in the Value field (should end with .jpg, .png, or another image file type) and click Update.
 - Note: Only edit the Value field - Changing the Name field will break this functionality.
+
+### Picking a layout for a portfolio post
+You can choose from two layouts for portfolio posts:
+1. **Left Column Wider** - Recommended when featured image is in *landscape* orientation
+2. **Right Column Wider** - Recommended when featured image is in *portrait* orientation
+
+Note that *Left Column Wider* is the default - If you don't choose otherwise, *Default Template* will be used, which is identical to *Left Column Wider*.
