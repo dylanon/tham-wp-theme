@@ -1,4 +1,8 @@
-<!-- Default portfolio page layout - Left Column Wider -->
+<?php /*
+Template Name: Right Column Wider
+Template Post Type: portfolio
+*/
+?>
 
 <?php get_header(); ?>
 
@@ -17,8 +21,8 @@
 			
 					<?php if ( has_post_thumbnail() ) { ?>
 			
-						<!-- Set left box (featured image) width to 7/12 -->
-						<div class="col-md-7 featured-image">
+						<!-- Set left box (featured image) width to 5/12 -->
+						<div class="col-md-5 featured-image">
 							<?php the_post_thumbnail( 'full', array( 'class' => 'border-red' ) ) ?>
 							<div class="featured-image-caption">
 								<?php the_post_thumbnail_caption() ?>
@@ -29,8 +33,8 @@
 							</div>
 						</div>
 			
-						<!-- Set right box (content) width to 5/12 -->
-						<div class="col-md-5">
+						<!-- Set right box (content) width to 7/12 -->
+						<div class="col-md-7">
 				
 					<?php } else { ?>
 			

@@ -1,4 +1,8 @@
-<!-- Default portfolio page layout - Left Column Wider -->
+<?php /*
+Template Name: Left Column Wider
+Template Post Type: portfolio
+*/
+?>
 
 <?php get_header(); ?>
 
