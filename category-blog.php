@@ -19,18 +19,31 @@
         
         <div class="col-md-4">
           <div class="blog-post-preview blog-post<?php if ($j%2==0) { ?> yellow-border<?php } ?>">
+            
             <a href="<?php the_permalink()?>">
+              
               <div class="posts-view-featured-image" style="
                 <?php if ( has_post_thumbnail() ) {?>
                   background:url(<?php the_post_thumbnail_url( 'medium' ); ?>) no-repeat center center/cover;
                   -webkit-background-size:cover;
-                  -moz-background-size:cover; 
+                  -moz-background-size:cover;
                   -o-background-size:cover;
                 <?php } else { ?>
                   background:#434d69;
                 <?php } ?>">
+              
+                <p class="h1 posts-view-post-title">
+                  <?php the_title(); ?>
+                </p>
+                
+                <p class="posts-view-read-more h4">
+                  Read more&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>
+                </p>
+              
               </div>
+            
             </a>
+            
             <h1><a class="text-uppercase" href="<?php the_permalink()?>"><?php the_title(); ?></a></h1>
             <div class="text-uppercase post-date"><?php the_time('F j, Y'); ?></div>
             <div><?php the_excerpt('(Read more ...)'); ?></div>

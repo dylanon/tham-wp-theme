@@ -492,9 +492,34 @@ html, body {
 		z-index: 1;
 		opacity: 0;
 		transition: opacity 0.15s;
+		overflow: hidden; /* Prevent content overflowing from boxes */
+		color: #fff;
+		padding: 5px 15px 5px 15px;
 	}
+	
 	.posts-view-featured-image:hover {
 		opacity: 1;
+	}
+	
+	p.posts-view-post-title {
+		display: block;
+		font-size: 32px; /* Match .blog-post-preview h1 */
+		margin: 0;
+		padding: 0;
+		text-decoration: underline;
+	}
+	
+	p.posts-view-read-more {
+		position: absolute;
+		right: 15px;
+		bottom: 0;
+		font-size: 18px;
+	}
+	
+	p.posts-view-post-title,
+	p.posts-view-read-more {
+		-webkit-filter: drop-shadow(1px 1px 4px black);
+		filter: drop-shadow(1px 1px 4px black);
 	}
 }
 
