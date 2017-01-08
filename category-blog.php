@@ -18,7 +18,7 @@
         <?php } ?>
         
         <div class="col-md-4">
-          <div class="blog-post-preview blog-post<?php if ($j%2==0) { ?> yellow-border<?php } ?>">
+          <div class="blog-post-preview<?php if ($j%2==0) { ?> yellow-border<?php } ?>">
             
             <a href="<?php the_permalink()?>">
               
@@ -32,9 +32,16 @@
                   background:#434d69;
                 <?php } ?>">
               
-                <p class="h1 posts-view-post-title">
-                  <?php the_title(); ?>
-                </p>
+                <p class="h1 posts-view-post-title">                                                                                         
+                  <?php the_title(); ?>                                                                                                      
+                </p>  
+                <div class="posts-view-no-hover-text">
+                  <div class="text-uppercase post-date"><?php the_time('F j, Y'); ?></div>
+                  <div><?php the_excerpt('(Read more ...)'); ?></div>
+                  <div class="small text-right text-uppercase img-floats-fix">
+                    <?php edit_post_link( '[ Edit This ]' ); ?>
+                  </div>
+                </div>
                 
                 <p class="posts-view-read-more h4">
                   Read more&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>
@@ -44,11 +51,13 @@
             
             </a>
             
-            <h1><a class="text-uppercase" href="<?php the_permalink()?>"><?php the_title(); ?></a></h1>
-            <div class="text-uppercase post-date"><?php the_time('F j, Y'); ?></div>
-            <div><?php the_excerpt('(Read more ...)'); ?></div>
-            <div class="small text-right text-uppercase img-floats-fix">
-              <?php edit_post_link( '[ Edit This ]' ); ?>
+            <div class="posts-view-pre-hover-text">
+              <h1><a class="text-uppercase" href="<?php the_permalink()?>"><?php the_title(); ?></a></h1>
+              <div class="text-uppercase post-date"><?php the_time('F j, Y'); ?></div>
+              <div><?php the_excerpt('(Read more ...)'); ?></div>
+              <div class="small text-right text-uppercase img-floats-fix">
+                <?php edit_post_link( '[ Edit This ]' ); ?>
+              </div>
             </div>
           </div>
         </div>

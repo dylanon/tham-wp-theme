@@ -432,7 +432,6 @@ html, body {
 	border-radius: 5px; /* round corners */
 	margin-top: 5px;
 	margin-bottom: 20px;
-	padding: 5px 15px 5px 15px;
 	position: relative;
 }
 
@@ -481,14 +480,51 @@ html, body {
 }
 
 /* Posts View (Category or Archive) */
-	.posts-view-featured-image { /* Do not display on phone or tablet (aiming only for desktop) */
-		display: none;
-	}
+.posts-view-pre-hover-text,
+.posts-view-read-more { /* Do not display on phone or tablet (aiming only for desktop) */
+	display: none;
+}
+
+.posts-view-no-hover-text {
+	display: block;
+}
+
+.posts-view-featured-image {
+	display: block;
+	overflow: hidden;
+	color: #fff;
+	padding: 5px 15px 5px 15px;
+}
+
+p.posts-view-post-title {
+	display: block;
+	font-size: 32px; /* Match .blog-post-preview h1 */
+	margin: 0;
+	padding: 0;
+	text-decoration: underline;
+}
+
+p.posts-view-post-title,
+p.posts-view-read-more {
+	-webkit-filter: drop-shadow(1px 1px 4px black);
+	filter: drop-shadow(1px 1px 4px black);
+}
 
 @media (min-width: 992px) { /* Large devices only */
-	.posts-view-featured-image { /* Featured images on posts view pages (post categories and portfolio archive) */
-		content: ' ';
+	.blog-post-preview {
+		padding: 5px 15px 5px 15px;
+	}
+	
+	.posts-view-pre-hover-text,
+	.posts-view-read-more {
 		display: block;
+	}
+	
+	.posts-view-no-hover-text {
+		display: none;
+	}
+	
+	.posts-view-featured-image { /* Featured images on posts view pages (post categories and portfolio archive) */
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -497,21 +533,10 @@ html, body {
 		z-index: 1;
 		opacity: 0;
 		transition: opacity 0.15s;
-		overflow: hidden; /* Prevent content overflowing from boxes */
-		color: #fff;
-		padding: 5px 15px 5px 15px;
 	}
 	
 	.posts-view-featured-image:hover {
 		opacity: 1;
-	}
-	
-	p.posts-view-post-title {
-		display: block;
-		font-size: 32px; /* Match .blog-post-preview h1 */
-		margin: 0;
-		padding: 0;
-		text-decoration: underline;
 	}
 	
 	p.posts-view-read-more {
@@ -519,12 +544,6 @@ html, body {
 		right: 15px;
 		bottom: 0;
 		font-size: 18px;
-	}
-	
-	p.posts-view-post-title,
-	p.posts-view-read-more {
-		-webkit-filter: drop-shadow(1px 1px 4px black);
-		filter: drop-shadow(1px 1px 4px black);
 	}
 }
 
