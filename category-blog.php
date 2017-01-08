@@ -24,7 +24,7 @@
               
               <div class="posts-view-featured-image" style="
                 <?php if ( has_post_thumbnail() ) {?>
-                  background:url(<?php the_post_thumbnail_url( 'medium' ); ?>) no-repeat center center/cover;
+                  background:url(<?php the_post_thumbnail_url( 'large' ); ?>) no-repeat center center/cover;
                   -webkit-background-size:cover;
                   -moz-background-size:cover;
                   -o-background-size:cover;
