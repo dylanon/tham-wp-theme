@@ -480,6 +480,11 @@ html, body {
 	}
 }
 
+/* Posts View (Category or Archive) */
+	.posts-view-featured-image { /* Do not display on phone or tablet (aiming only for desktop) */
+		display: none;
+	}
+
 @media (min-width: 992px) { /* Large devices only */
 	.posts-view-featured-image { /* Featured images on posts view pages (post categories and portfolio archive) */
 		content: ' ';
