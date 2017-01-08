@@ -8,7 +8,7 @@
       
       <h1 class="text-center mobile-only">Reviews</h1>
       
-  <?php $i=0; // counter (for row display) ?>
+      <?php $i=0; // counter (for row display) ?>
       <?php $j=0; // counter (for alternating colours) ?>
       
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
