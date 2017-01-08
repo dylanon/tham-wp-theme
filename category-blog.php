@@ -34,17 +34,10 @@
               
                 <p class="h1 posts-view-post-title">                                                                                         
                   <?php the_title(); ?>                                                                                                      
-                </p>  
-                <div class="posts-view-no-hover-text">
-                  <div class="text-uppercase post-date"><?php the_time('F j, Y'); ?></div>
-                  <div><?php the_excerpt('(Read more ...)'); ?></div>
-                  <div class="small text-right text-uppercase img-floats-fix">
-                    <?php edit_post_link( '[ Edit This ]' ); ?>
-                  </div>
-                </div>
+                </p>
                 
                 <p class="posts-view-read-more h4">
-                  Read more&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>
+                  Read&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>
                 </p>
               
               </div>
