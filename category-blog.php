@@ -36,6 +36,8 @@
                   <?php the_title(); ?>                                                                                                      
                 </p>
                 
+                <p class="text-uppercase post-date posts-view-post-date"><?php the_time('F j, Y'); ?></p>
+                
                 <p class="posts-view-read-more h4">
                   Read&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>
                 </p>

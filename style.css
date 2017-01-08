@@ -504,8 +504,7 @@ p.posts-view-post-title {
 	text-decoration: underline;
 }
 
-p.posts-view-post-title,
-p.posts-view-read-more {
+.posts-view-featured-image p {
 	-webkit-filter: drop-shadow(1px 1px 4px black);
 	filter: drop-shadow(1px 1px 4px black);
 }
@@ -515,6 +514,14 @@ p.posts-view-read-more {
 	right: 15px;
 	bottom: 0;
 	font-size: 18px;
+}
+
+p.posts-view-post-date.post-date {
+	color: #fff;
+}
+
+.blog-post-preview > a {
+	text-decoration: none ;
 }
 
 @media (min-width: 992px) { /* Large devices only */
