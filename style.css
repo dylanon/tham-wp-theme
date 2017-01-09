@@ -505,8 +505,8 @@ p.posts-view-post-title {
 }
 
 .posts-view-featured-image p {
-	-webkit-filter: drop-shadow(1px 1px 4px black);
-	filter: drop-shadow(1px 1px 4px black);
+	-webkit-filter: drop-shadow(1px 1px 1px black);
+	filter: drop-shadow(1px 1px 1px black);
 }
 
 p.posts-view-read-more {
@@ -515,6 +515,8 @@ p.posts-view-read-more {
 	bottom: 5px;
 	font-size: 18px;
 	margin-bottom: 0;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 16px;
 }
 
 p.posts-view-post-date.post-date {
@@ -526,6 +528,7 @@ p.posts-view-post-date.post-date {
 }
 
 @media (min-width: 992px) { /* Large devices only */
+	
 	.blog-post-preview {
 		padding: 5px 15px 5px 15px;
 		overflow: hidden; /* Make sure .posts-view-featured-image doesn't overflow on hover. See .posts-view-featured-image below as well. */
@@ -555,13 +558,7 @@ p.posts-view-post-date.post-date {
 	.posts-view-featured-image:hover {
 		opacity: 1;
 	}
-	
-/* 	p.posts-view-read-more {
-		position: absolute;
-		right: 15px;
-		bottom: 0;
-		font-size: 18px;
-	} */
+
 }
 
 /* Featured Images */
