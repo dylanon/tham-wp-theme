@@ -118,8 +118,11 @@ function bootstrap_comment( $comment, $args, $depth ) {
 		<?php endif;
 	}
 
-function custom_rewrite_rule() { // Rewrite URLs for portfolio category views to follow .../past/%portfolio_category%/
-  add_rewrite_rule('^past/([^/]*)$', 'index.php?portfolio_category=$matches[1]', 'top');
+function custom_rewrite_rule() {
+	add_rewrite_rule('^past/([^/]*)/page/(\d*)$', 'index.php?portfolio_category=$matches[1]&paged=$matches[2]', 'top'); // Rewrite URLs for Portfolio Category Listings to follow .../past/%portfolio_category%/
+	add_rewrite_rule('^past/([^/]*)$', 'index.php?portfolio_category=$matches[1]', 'top'); // Pagination - Portfolio Categories
+	add_rewrite_rule('^(blog|analysis)$', 'index.php?category_name=$matches[1]', 'top'); // Post Category Listings (Blog & Analysis)
+	add_rewrite_rule('^(blog|analysis)/page/(\d*)$', 'index.php?category_name=$matches[1]&paged=$matches[2]', 'top'); // Pagination - Blog & Analysis 
 }
 add_action('init', 'custom_rewrite_rule');
 

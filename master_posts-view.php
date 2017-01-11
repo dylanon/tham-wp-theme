@@ -61,7 +61,11 @@
         </div>
       <?php } ?>
 
-    <?php endwhile; else : ?>
+    <?php endwhile; ?>
+
+    <?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?>
+
+    <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
 
