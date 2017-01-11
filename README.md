@@ -10,6 +10,8 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 4. Consolidated single post view template files and rewrote PHP to show active category in nav for single posts and category views (*Blog* and *Analysis*).
 5. Fix permalink structure, specifically for portfolio streams. E.g. When *Actor* is clicked, brings user to website.ca/past/actor.
 6. Better solution for choosing portfolio post layouts. Select a template from *Page Attributes* - No more wrestling with custom fields and values! (Made possible with WordPress 4.7)
+7. Incorporate featured images into post and portfolio listings, including a hover effect for desktop and pagination support.
+8. Prettied up URLs for Blog, Analysis, Portfolio Category listings.
 
 ### v1.1
 1. Portfolio items (single view)
