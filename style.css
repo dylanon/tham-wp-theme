@@ -561,6 +561,29 @@ p.posts-view-post-date.post-date {
 
 }
 
+/* Pagination */
+
+div.posts-view-pagination {
+	text-align: center;
+}
+
+div.posts-view-pagination .nav-links {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 22px;
+}
+
+@media ( min-width: 992px ) {
+	
+	div.posts-view-pagination {
+		text-align: right;
+	}
+	
+	div.posts-view-pagination .nav-links {
+	font-size: 18px;
+	}
+	
+}
+
 /* Featured Images */
 
 .featured-image > img {
