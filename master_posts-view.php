@@ -63,6 +63,17 @@
 
     <?php endwhile; ?>
 
+    <!-- Close Bootstrap row if necessary-->
+    <?php if ( $i%3==1 ) { ?>
+        <div class"col-md-4"></div>      
+        <div class"col-md-4"></div>
+      </div>
+    <?php } elseif ( $i%3==2 ) { ?>
+        <div class"col-md-4"></div>
+      </div>
+    <?php } ?>
+
+    <!-- Pagination -->
     <div class="posts-view-pagination text-uppercase"><?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?></div>
 
     <?php else : ?>
