@@ -13,6 +13,11 @@
         <p><?php echo get_the_excerpt( '265' ); ?></p> <!-- Change this ID to match the 'Why Analysis' post on install. -->
         <hr />      
       </div>
+
+<?php $i=0; // counter (for row display) ?>
+<?php $j=0; // counter (for alternating colours) ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       
  <?php if ($i%3==0) { // if counter is multiple of 3 ?>
         <div class="row">
