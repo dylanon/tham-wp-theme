@@ -1,29 +1,34 @@
 <?php get_header(); ?>
 
-<?php $mysection = 'analysis'; ?>
+<?php $mysection = 'analysis'; 
+      $excerptid = 265; ?><!-- Change this ID to match the 'Why Analysis' post on install. -->
 
 <?php get_template_part( 'nav-thought' ); // Navigation bar ?>
 
-    <div class="bottom-padded container">
+<div class="bottom-padded container">
       
-      <h1 class="text-center mobile-tablet-only">Analysis</h1>
+  <h1 class="text-center mobile-tablet-only">Analysis</h1>
       
-      <div class="text-center text-byte mobile-tablet-only">
-        <hr />
-        <p><?php echo get_the_excerpt( '265' ); ?></p> <!-- Change this ID to match the 'Why Analysis' post on install. -->
-        <hr />      
-      </div>
+  <div class="text-center text-byte mobile-tablet-only">
+    <hr />
+    <p><?php echo get_the_excerpt( $excerptid ); ?></p>
+    <hr />      
+  </div>
 
 <?php $i=0; // counter (for row display) ?>
 <?php $j=0; // counter (for alternating colours) ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      
- <?php if ($i%3==0) { // if counter is multiple of 3 ?>
+  <div class="row">      
+
+    <div class="col-md-8">
+
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+      <?php if ($i%2==0) { // Start .row if counter is multiple of 2 ?>
         <div class="row">
       <?php } ?>
 
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="blog-post-preview<?php if ($j%2==0) { ?> yellow-border<?php } ?>">
 
           <a href="<?php the_permalink()?>">
@@ -67,39 +72,46 @@
               <?php edit_post_link( '[ Edit This ]' ); ?>
             </div>
           </div>
-        </div>
-      </div>
+
+        </div><!-- .blog-post-preview -->
+      </div><!-- .col-md-6 -->
 
       <?php $i++; ?>
       <?php $j++; ?>
 
-      <?php if($i%3==0) { // if counter is multiple of 3 ?>
+      <?php if($i%2==0) { // Close .row if counter is multiple of 2 ?>
         </div>
       <?php } ?>
 
     <?php endwhile; ?>
 
-    <!-- Close Bootstrap row if necessary-->
-    <?php if ( $i%3==1 ) { ?>
-        <div class"col-md-4"></div>      
-        <div class"col-md-4"></div>
-      </div>
-    <?php } elseif ( $i%3==2 ) { ?>
-        <div class"col-md-4"></div>
-      </div>
-    <?php } ?>
+      <!-- Close Bootstrap row if necessary-->
+      <?php if ( $i%2==1 ) { ?>
+          <div class"col-md-6"></div>      
+        </div>
+      <?php } ?>
 
-    <!-- Pagination -->
-    <div class="posts-view-pagination text-uppercase"><?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?></div>
+      <!-- Pagination -->
+      <div class="posts-view-pagination text-uppercase"><?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?></div>
 
     <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
 
-    <?php if($i%3!=0) { // put closing div if loop is not exactly a multiple of 3 ?>
-      </div>
-    <?php } ?>
+    </div><!-- .col-md-8 -->
 
-</div>
+    <!-- For the excerpt on desktop -->
+    <div class="col-md-4">
+      <div class="text-center text-byte desktop-only">
+        <hr />
+        <h1>Analysis</h1>
+        <hr />
+        <p><?php echo get_the_excerpt( $excerptid ); ?></p>
+      </div>
+    </div>
+
+  </div><!-- .row -->
+
+</div><!-- .bottom-padded.container -->
 
 <?php get_footer(); ?>

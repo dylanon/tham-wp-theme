@@ -3,7 +3,7 @@
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-      <?php if ($i%3==0) { // if counter is multiple of 3 ?>
+      <?php if ($i%3==0) { // Start .row if counter is multiple of 3 ?>
         <div class="row">
       <?php } ?>
 
@@ -57,7 +57,7 @@
       <?php $i++; ?>
       <?php $j++; ?>
 
-      <?php if($i%3==0) { // if counter is multiple of 3 ?>
+      <?php if($i%3==0) { // Close .row if counter is multiple of 3 ?>
         </div>
       <?php } ?>
 
@@ -79,9 +79,5 @@
     <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
-
-    <?php if($i%3!=0) { // put closing div if loop is not exactly a multiple of 3 ?>
-      </div>
-    <?php } ?>
 
 </div>

@@ -3,6 +3,12 @@
 This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 
 ## Changelog
+### v1.3
+1. *Analysis* page
+  - Fix page title on mobile/tablet
+  - 'Why Analysis' post excerpt is displayed at top on mobile/tablet, and in place of right column on desktop. Reduced to two columns of posts.
+2. Bugfix: Posts View PHP now closes Bootstrap rows properly.
+
 ### v1.2
 1. Comments now supported on the blog.
 2. *Reviews* section changed to *Analysis*

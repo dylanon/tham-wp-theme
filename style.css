@@ -566,6 +566,19 @@ p.posts-view-post-date.post-date {
 	font-size: 110%;
 }
 
+.desktop-only {
+	display: none;
+}
+
+@media ( min-width: 992px ) {
+	.desktop-only {
+		display: block;
+	}
+	.text-byte.desktop-only hr:nth-child(1) {
+		margin-top: 5px;
+	}
+}
+
 /* Pagination */
 
 div.posts-view-pagination {
