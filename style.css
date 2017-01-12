@@ -450,8 +450,8 @@ html, body {
 	padding-top: 5px;
 }
 
-@media (min-width: 768px) { /* Only display on devices that use the collapsed mobile menu */
-	.mobile-only {
+@media (min-width: 992px) { /* Only display on devices that use a single column for post views */
+	.mobile-tablet-only {
 		display: none;
 	}
 }
@@ -559,6 +559,11 @@ p.posts-view-post-date.post-date {
 		opacity: 1;
 	}
 
+}
+
+/* Analysis Posts View */
+.text-byte {
+	font-size: 110%;
 }
 
 /* Pagination */
