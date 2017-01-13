@@ -233,18 +233,8 @@ a:hover {
 	padding: 5px 0px;
 }
 
-.title-block { /* Navbar bottom margin in mobile view */
-	margin-bottom: 20px;
-}
-
 .navbar { /* Remove extra bottom margin on navbar */
 	margin-bottom: 0;
-}
-
-@media (min-width: 768px) { /* Add bottom margin to navbar on desktop */
-	.navbar-default {
-		margin-bottom: 20px;
-	}
 }
 
 .navbar-default h1,
@@ -422,8 +412,9 @@ html, body {
 	position: relative;
 }
 
-.bottom-padded {
+.bottom-padded { /* Might want to change this class name to better reflect its function */
 	padding-bottom: 75px;
+	padding-top: 20px; /* Padding to separate top of page content from navbar */
 }
 
 /* Blog Styles (Archive/Category View) */
@@ -890,51 +881,13 @@ li.comment.depth-1 > div.comment-body > p {
 	padding: 10px;
 }
 
-/* li.comment.depth-1 > div.comment-body > p {
-	border: 4px solid #dfb377;
+/* Custom Page Templates */
+#page-content {
+	position: relative; /* Position so absolute positioning works inside */
 }
 
-li.comment.depth-1:nth-of-type(even) > div.comment-body > p {
-	border: 4px solid #434d69;
-} */
-
-
-/* a #front-page-performance {
-	text-decoration: none;
-	opacity: 1;
-} */
-/* 
-#front-page-thought {
-	background-color: #434d69;
-	opacity: 0.95;
-	flex: 1;
-	position: relative;
+@media ( min-width: 786px ) { /* Hide bottom nav border on desktop */
+	.navbar-default {
+		border-color: transparent;
+	}
 }
-
-.flex-center-contents {
-	display: flex; */
-/* 	justify-content: center; */
-/* 	align-items: center; */
-/* }
-
-#front-page-body h1 {
-	font-family: "Arial Black", Gadget, sans-serif;
-	color: #fff;
-	margin: 0;
-}
-
-.front-page-center-links {
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	width: 100%;
-}
-
-.front-page-performance {
-	bottom: 5px;
-}
-
-.front-page-thought {
-	top: 5px;
-} */

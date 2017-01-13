@@ -1,4 +1,4 @@
-<?php /* Template Name: Performance */ ?>
+<?php /* Template Name: Performance Section */ ?>
 
 <?php get_header(); ?>
 

@@ -1,3 +1,5 @@
+<!-- This template is identical to page-templates/performance.php -->
+
 <?php get_header(); ?>
 
 <?php get_template_part( 'nav-performance' ); // Navigation bar ?>

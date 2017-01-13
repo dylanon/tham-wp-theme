@@ -1,4 +1,4 @@
-<?php /* Template Name: Thought */ ?>
+<?php /* Template Name: Thought Section */ ?>
 
 <?php get_header(); ?>
 

@@ -1,8 +1,8 @@
-<?php /* Template Name: CV */ ?>
+<?php /* Template Name: Slim Layout (Performance Section) */ ?>
 
 <?php get_header(); ?>
 
-<?php get_template_part( 'nav-thought' ); // Navigation bar ?>
+<?php get_template_part( 'nav-performance' ); // Navigation bar ?>
 
     <div class="bottom-padded narrow-width container">
       

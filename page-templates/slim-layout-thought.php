@@ -1,4 +1,4 @@
-<?php /* Template Name: About */ ?>
+<?php /* Template Name: Slim Layout (Thought Section) */ ?>
 
 <?php get_header(); ?>
 

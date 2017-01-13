@@ -87,7 +87,7 @@
 
       <!-- Close Bootstrap row if necessary-->
       <?php if ( $i%2==1 ) { ?>
-          <div class"col-md-6"></div>      
+          <div class="col-md-6"></div>      
         </div>
       <?php } ?>
 

@@ -14,6 +14,12 @@
     <![endif]-->
     <?php wp_head(); ?>
   </head>
-  <body <?php if ( is_front_page() ) { ?>id="front-page-body"><?php } else { ?>>
-   
-      <div class="page-wrapper"><?php } ?>
+  <body <?php if ( is_page_template( array( 'page-templates/image-background-thought.php', 
+                                            'page-templates/image-background-performance.php' ) ) ) { ?>
+          style="color:#e5e5e5;" <?php // Off-white font for pages with shaded full image background. ?>
+        <?php } ?>
+        <?php if ( is_front_page() ) { ?>
+          id="front-page-body">
+        <?php } else { ?>>
+          <div class="page-wrapper">
+        <?php } ?>

@@ -8,6 +8,16 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
   - Fix page title on mobile/tablet
   - 'Why Analysis' post excerpt is displayed at top on mobile/tablet, and in place of right column on desktop. Reduced to two columns of posts.
 2. Bugfix: Posts View PHP now closes Bootstrap rows properly.
+3. Bugfix: Typos in posts view code.
+4. New page templates
+  - *Image Background (Performance Section)* and *Image Background (Thought Section)* are now options for pages
+  under *Page Attributes*. Fills the background with a shaded featured image, and turns the text light grey
+  for visibility.
+  - Removed old, unnecessary templates: *index2.php*, *about.php*, *cv.php*, *performance-no-title.php*,
+  *thought-no-title.php*,
+  - *Performance Section* and *Thought Section* allow you to pick which navigation shows at the top.
+  (*Default Template* is identical to *Performance Section*.)
+  - Structural changes behind the scenes to make *Image Background* templates possible
 
 ### v1.2
 1. Comments now supported on the blog.

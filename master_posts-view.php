@@ -65,11 +65,11 @@
 
     <!-- Close Bootstrap row if necessary-->
     <?php if ( $i%3==1 ) { ?>
-        <div class"col-md-4"></div>      
-        <div class"col-md-4"></div>
+        <div class="col-md-4"></div>      
+        <div class="col-md-4"></div>
       </div>
     <?php } elseif ( $i%3==2 ) { ?>
-        <div class"col-md-4"></div>
+        <div class="col-md-4"></div>
       </div>
     <?php } ?>
 
