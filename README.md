@@ -14,10 +14,11 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
   under *Page Attributes*. Fills the background with a shaded featured image, and turns the text light grey
   for visibility.
   - Removed old, unnecessary templates: *index2.php*, *about.php*, *cv.php*, *performance-no-title.php*,
-  *thought-no-title.php*,
+  *thought-no-title.php*
   - *Performance Section* and *Thought Section* allow you to pick which navigation shows at the top.
   (*Default Template* is identical to *Performance Section*.)
-  - Structural changes behind the scenes to make *Image Background* templates possible
+  - *Slim Layout* available in both *Performance* and *Thought* flavours.
+  - Structural changes behind the scenes to make *Image Background* templates possible.
 
 ### v1.2
 1. Comments now supported on the blog.
