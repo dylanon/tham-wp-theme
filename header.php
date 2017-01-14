@@ -21,5 +21,28 @@
         <?php if ( is_front_page() ) { ?>
           id="front-page-body">
         <?php } else { ?>>
+    
+          <!-- Full page background image for page templates -->
+          <?php if ( is_page_template( array( 'page-templates/image-background-thought.php', 
+                                            'page-templates/image-background-performance.php' ) ) ) { ?>
+            <div class="full-image-background" style="
+            <?php if ( has_post_thumbnail() ) {?>
+              background:url(<?php the_post_thumbnail_url( 'large' ); ?>) center center/cover no-repeat fixed;
+              -webkit-background-size:cover;
+              -moz-background-size:cover;
+              -o-background-size:cover;
+              -webkit-filter: brightness(0.65);
+              filter: brightness(0.65);
+              content: ' ';
+              position: fixed;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              z-index: -1;
+            <?php } ?>">
+            </div>
+          <?php } ?>
+    
           <div class="page-wrapper">
         <?php } ?>

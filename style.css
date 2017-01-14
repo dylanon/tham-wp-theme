@@ -882,9 +882,6 @@ li.comment.depth-1 > div.comment-body > p {
 }
 
 /* Custom Page Templates */
-#page-content {
-	position: relative; /* Position so absolute positioning works inside */
-}
 
 @media ( min-width: 786px ) { /* Hide bottom nav border on desktop */
 	.navbar-default {
