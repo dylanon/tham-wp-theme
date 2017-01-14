@@ -3,6 +3,14 @@
 This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 
 ## Changelog
+### v.1.4
+1. Fixed *Image Background* page template behaviour - now **really** fills the whole background.
+2. Bugfix: Performance navigation bar now responds to taps/clicks to switch over to Thought.
+3. Add disabled code for jQuery Mobile for future use.
+4. Hard code 'Why Analysis' post ID into *Analysis* posts view.
+5. Change logo link - now leads to Blog or Present, depending on where you are.
+6. Incorporate newly edited photography.
+
 ### v1.3
 1. *Analysis* page
   - Fix page title on mobile/tablet
