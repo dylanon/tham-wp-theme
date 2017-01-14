@@ -19,6 +19,14 @@
 
 <div class="bottom-padded slim-width container">
 
+	<strong><p>
+		&#8592;
+		<a class="" href="<?php get_bloginfo( ‘template_url’ ); ?>
+											<?php if ( in_category('analysis') ) { ?>/analysis<?php } else { ?>/blog<?php } ?>">
+			back to <?php if ( in_category('analysis') ) { ?>Analysis<?php } else { ?>the Blog<?php } ?>
+		</a>
+	</p></strong>
+
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 		<div class="blog-post">
