@@ -19,19 +19,26 @@
 
 <div class="bottom-padded slim-width container">
 
-	<strong><p>
-		&#8592;
-		<a class="" href="<?php get_bloginfo( ‘template_url’ ); ?>
-											<?php if ( in_category('analysis') ) { ?>/analysis<?php } else { ?>/blog<?php } ?>">
-			back to <?php if ( in_category('analysis') ) { ?>Analysis<?php } else { ?>the Blog<?php } ?>
-		</a>
-	</p></strong>
-
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 		<div class="blog-post">
 
-			<h1 class="text-uppercase"><?php the_title(); ?></h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-sm-push-9 no-padding back-to-posts-view"><!-- Back to posts view link -->
+						<strong><p>
+							&#8592; <!-- Left arrow -->
+							<a class="" href="<?php get_bloginfo( ‘template_url’ ); ?>
+																<?php if ( in_category('analysis') ) { ?>/analysis<?php } else { ?>/blog<?php } ?>">
+								back to <?php if ( in_category('analysis') ) { ?>Analysis<?php } else { ?>the Blog<?php } ?>
+							</a>
+						</p></strong>
+					</div>
+					<div class="col-sm-9 col-sm-pull-3 no-padding">
+						<h1 class="text-uppercase"><?php the_title(); ?></h1> <!-- Post title -->
+					</div>
+				</div>
+			</div>
 
 			<?php if ( has_post_thumbnail() ) { ?>
 

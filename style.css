@@ -470,6 +470,12 @@ html, body {
 	}
 }
 
+@media (min-width: 768px) { /* Push back to posts view link right on larger devices */
+	.back-to-posts-view {
+		text-align: right;
+	}
+}
+
 /* Posts View (Category or Archive) */
 .posts-view-pre-hover-text { /* Do not display on phone or tablet (aiming only for desktop) */
 	display: none;
@@ -516,6 +522,10 @@ p.posts-view-post-date.post-date {
 
 .blog-post-preview > a {
 	text-decoration: none ;
+}
+
+.no-padding {
+	padding: 0;
 }
 
 @media (min-width: 992px) { /* Large devices only */
