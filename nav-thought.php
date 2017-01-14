@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
+      <a class="navbar-brand" href="<?php get_bloginfo( ‘template_url’ ); ?>/blog">
         <img class="taylor-brand" src="<?php bloginfo('template_directory'); ?>/img/logo-white.png" alt="Taylor Hammond" />
         <img class="taylor-brand-horiz" src="<?php bloginfo('template_directory'); ?>/img/logo-white-horiz.png" alt="Taylor Hammond" />
       </a>
@@ -54,7 +54,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img class="taylor-brand" src="<?php bloginfo('template_directory'); ?>/img/logo-white.png" alt="Taylor Hammond" /></a>
+        <a class="navbar-brand" href="<?php get_bloginfo( ‘template_url’ ); ?>/present"><img class="taylor-brand" src="<?php bloginfo('template_directory'); ?>/img/logo-white.png" alt="Taylor Hammond" /></a>
 
       </div>
 
@@ -63,7 +63,7 @@
           <!-- Make 'Past' page and all portfolio items light up 'Past' in the nav bar. -->
           <li <?php if ( $pagename == 'past' or $mysection == 'past' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/past">Past</a></li>
           <li <?php if ( $pagename == 'present' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present">Present</a></li>
-          <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/category/blog" class="hide-crossover">Thought</a></li>
+          <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/blog" class="hide-crossover">Thought</a></li>
         </ul>
          <h1 class="section-heading navbar-right" id="nav-crossback-trigger">Performance</h1>
       </div>
