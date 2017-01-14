@@ -10,6 +10,7 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 4. Hard code 'Why Analysis' post ID into *Analysis* posts view.
 5. Change logo link - now leads to Blog or Present, depending on where you are.
 6. Incorporate newly edited photography.
+7. Blog and Analysis single post view - *Older* and *Newer* post links now stay within each category (no mixing of categories).
 
 ### v1.3
 1. *Analysis* page
