@@ -57,17 +57,32 @@
 				<?php the_time('l F j, Y'); ?><br /><br />
 				<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
 			</p>
+			
+			<!-- Older and Newer post links -->
 			<hr />
-			<?php if ( $postcat_blog ) { comments_template(); } ?>
+			<div class="container-fluid">
+				<strong>
+					<div class="row">
+						<div class="no-padding col-sm-6 newer-post">
+							<?php next_post_link( '%link', '&#8592; %title (newer)', TRUE, 'category' ); ?>
+							<br class="hide-over-768" />
+							<br class="hide-over-768" />
+						</div>
+						<div class="no-padding col-sm-6 older-post">
+							<?php previous_post_link(  '%link', '%title (older) &#8594;', TRUE, 'category' ); ?>
+						</div>
+					</div>
+				</strong>
+			</div><!-- .container-fluid -->
+			<hr />
+			
+			<?php if ( $postcat_blog ) { comments_template(); } ?><!-- Comments for Blog posts only -->
 
 		</div> <!-- .blog-post -->
 
 	<?php endwhile; else : ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 	<?php endif; ?>
-
-	<div class="text-center"><strong><?php next_post_link( '%link', '&#8592; %title (newer)', TRUE, 'category' ); ?>&nbsp;&nbsp;//&nbsp;&nbsp;<?php previous_post_link(  '%link', '%title (older) &#8594;', TRUE, 'category' ); ?></strong></div>
-	<hr />
 	
 </div>
 

@@ -1,6 +1,6 @@
 # tham-wp-theme
 
-This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
+This WordPress theme is built on [Bootstrap](http://getbootstrap.com).
 
 ## Changelog
 ### v.1.4
@@ -12,6 +12,7 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com)
 6. Incorporate newly edited photography.
 7. Blog and Analysis single post view
   - *Older* and *Newer* post links now stay within each category (no mixing of categories).
+  - *Older* and *Newer* post links now stack & unstack depending on device size, and were moved above comments.
   - Add link back to Blog or Analysis page for easier navigation
   - Round *Leave a Comment* box corners for Blog posts.
 

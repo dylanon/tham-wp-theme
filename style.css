@@ -470,9 +470,23 @@ html, body {
 	}
 }
 
+.newer-post,
+.older-post {
+	text-align: center;
+}
+
 @media (min-width: 768px) { /* Push back to posts view link right on larger devices */
 	.back-to-posts-view {
 		text-align: right;
+	}
+	.newer-post {
+		text-align: left;
+	}
+	.older-post {
+		text-align: right;
+	}
+	.hide-over-768 { /* Hide spacers for viewport >= 768px */
+		display: none;
 	}
 }
 
