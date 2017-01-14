@@ -883,7 +883,7 @@ li.comment.depth-1 > div.comment-body > p {
 
 /* Custom Page Templates */
 
-@media ( min-width: 786px ) { /* Hide bottom nav border on desktop */
+@media ( min-width: 768px ) { /* Hide bottom nav border on desktop */
 	.navbar-default {
 		border-color: transparent;
 	}
