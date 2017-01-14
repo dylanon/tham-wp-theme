@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php $mysection = 'analysis'; 
-      $excerptid = 265; ?><!-- Change this ID to match the 'Why Analysis' post on install. -->
+      $excerptid = 159; ?><!-- Change this ID to match the 'Why Analysis' post on install. -->
 
 <?php get_template_part( 'nav-thought' ); // Navigation bar ?>
 
