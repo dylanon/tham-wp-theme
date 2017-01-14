@@ -18,7 +18,7 @@
 					<?php if ( has_post_thumbnail() ) { ?>
 			
 						<!-- Set left box (featured image) width to 7/12 -->
-						<div class="col-md-7 featured-image">
+						<div class="col-sm-7 featured-image">
 							<?php the_post_thumbnail( 'full', array( 'class' => 'border-red' ) ) ?>
 							<div class="featured-image-caption">
 								<?php the_post_thumbnail_caption() ?>
@@ -30,12 +30,12 @@
 						</div>
 			
 						<!-- Set right box (content) width to 5/12 -->
-						<div class="col-md-5">
+						<div class="col-sm-5">
 				
 					<?php } else { ?>
 			
 						<!-- Set right box (content) width to full width -->
-						<div class="col-md-12"><!-- If no featured image -->
+						<div class="col-sm-12"><!-- If no featured image -->
 			
 					<?php } ?>
 			
@@ -54,7 +54,7 @@
 								<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-right' ) ); ?>
 							</div>
 				
-						</div><!-- .col-md-12 when there is no featured image -->
+						</div><!-- .col-sm-12 when there is no featured image -->
 		
 				</div><!-- .row -->
 
