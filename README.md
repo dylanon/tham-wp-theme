@@ -15,6 +15,8 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com).
   - *Older* and *Newer* post links now stack & unstack depending on device size, and were moved above comments.
   - Add link back to Blog or Analysis page for easier navigation
   - Round *Leave a Comment* box corners for Blog posts.
+8. Portfolio single post view
+  - Fix ordering of content on mobile - Title now appears at top.
 
 ### v1.3
 1. *Analysis* page
