@@ -20,24 +20,12 @@
   </a>
 </div>
 
-<!-- <div id="front-page-performance" class="flex-center-contents">
-  
-  <a href="#">
-    <div class="text-uppercase text-center front-page-center-links front-page-performance">
-      <h1>Performance</h1>
-    </div>
-  </a>
-  
+<div id="swipe-guides" class="hide-over-768">
+  <p class="">
+     <span class="glyphicon glyphicon-menu-left"></span>
+    &nbsp;Swipe (or <a href="<?php get_bloginfo( ‘template_url’ ); ?>/blog">enter here</a>)&nbsp;
+    <span class="glyphicon glyphicon-menu-right"></span>
+  </p>
 </div>
-
-<div id="front-page-thought" class="flex-center-contents">
-  
-  <a href="#">
-    <div class="text-uppercase text-center front-page-center-links front-page-thought">
-      <h1>Thought</h1>
-    </div>
-  </a>
-  
-</div> -->
 
 <?php get_footer(); ?>
