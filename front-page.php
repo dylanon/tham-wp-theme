@@ -1,12 +1,16 @@
 <?php get_header(); ?>
 
+<div id="front-page-rest"></div>
+
 <div id="front-page-moutheyes"></div>
 
-<a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" id="front-page-performance">
-  <div>
-    <h1>Performance</h1>
-  </div>
-</a>
+<div class="outer">
+  <a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" >
+    <div id="front-page-performance">
+      <h1>Performance</h1>
+    </div>
+  </a>
+</div>
 
 <a href="<?php get_bloginfo( ‘template_url’ ); ?>/blog" id="front-page-thought">
   <div>
