@@ -6,9 +6,9 @@ function taylorhammond_enqueue_style() {
 
 function taylorhammond_enqueue_script() {
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), true );
+	wp_enqueue_script( 'touchswipe-js', get_template_directory_uri() . '/js/jquery.touchSwipe.min.js', array( 'jquery' ), true ); // TouchSwipe
 	wp_enqueue_script( 'nav-crossover-js', get_template_directory_uri() . '/js/nav-crossover.js', array( 'jquery' ), true );
 	wp_enqueue_script( 'front-page-js', get_template_directory_uri() . '/js/front-page.js', array( 'jquery' ), true );
-	wp_enqueue_script( 'jquery-mobile-js', 'http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js', true ); // Add jQuery Mobile
 }
 
 add_action( 'wp_enqueue_scripts', 'taylorhammond_enqueue_style' );
