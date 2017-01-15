@@ -28,10 +28,21 @@ jQuery(document).ready(function($){ /* WordPress loads jQuery in no conflict mod
 
   $("#front-page-rest").swipe({
   swipeLeft:function(event, direction, distance, duration, fingerCount) {
-    $("#front-page-performance h1").css("opacity", "1");
+    $("#front-page-performance-text").css("opacity", "1");
     $("#swipe-wrapper-performance").css("width", "100%");
     $("#front-page-performance").css("right", "0");
     $("#swipe-wrapper-performance a").attr("href", "/present");
+    $("#swipe-guides").css("opacity", "0");
+  }
+  });
+  
+  $("#front-page-rest").swipe({
+  swipeRight:function(event, direction, distance, duration, fingerCount) {
+    $("#front-page-thought-text").css("opacity", "1");
+    $("#swipe-wrapper-thought").css("width", "100%");
+    $("#front-page-thought").css("left", "0");
+    $("#swipe-wrapper-thought a").attr("href", "/blog");
+    $("#swipe-guides").css("opacity", "0");
   }
   });
   
@@ -41,16 +52,8 @@ jQuery(document).ready(function($){ /* WordPress loads jQuery in no conflict mod
     setTimeout(function(){
       $("#swipe-wrapper-performance").css("width", "0");
     }, 500);
-    $("#front-page-performance h1").css("opacity", "0");
-  }
-  });
-  
-  $("#front-page-rest").swipe({
-  swipeRight:function(event, direction, distance, duration, fingerCount) {
-    $("#front-page-thought h1").css("opacity", "1");
-    $("#swipe-wrapper-thought").css("width", "100%");
-    $("#front-page-thought").css("left", "0");
-    $("#swipe-wrapper-thought a").attr("href", "/blog");
+    $("#front-page-performance-text").css("opacity", "0");
+    $("#swipe-guides").css("opacity", "0.75");
   }
   });
   
@@ -60,7 +63,8 @@ jQuery(document).ready(function($){ /* WordPress loads jQuery in no conflict mod
     setTimeout(function(){
       $("#swipe-wrapper-thought").css("width", "0");
     }, 500);
-    $("#front-page-thought h1").css("opacity", "0");
+    $("#front-page-thought-text").css("opacity", "0");
+    $("#swipe-guides").css("opacity", "0.75");
   }
   });
 

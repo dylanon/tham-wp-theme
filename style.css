@@ -858,19 +858,6 @@ body#front-page-body {
 		transition: right 0.2s ease-out;
 	}
 
-	#front-page-performance h1,
-	#front-page-thought h1 {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translateX(-50%);
-		transform: translateX(-50%);
-		opacity: 0;
-		-webkit-transition: opacity 0.3s;
-		-moz-transition: opacity 0.3s;
-		transition: opacity 0.3s;
-	}
-
 	#front-page-thought {
 		position: absolute;
 		top: 0;
@@ -884,6 +871,26 @@ body#front-page-body {
 		-moz-transition: left 0.2s ease-out;
 		transition: left 0.2s ease-out;
 	}
+
+	#front-page-performance-text,
+	#front-page-thought-text {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		opacity: 0;
+		-webkit-transition: opacity 0.3s;
+		-moz-transition: opacity 0.3s;
+		transition: opacity 0.3s;
+		color: #fff;
+		text-align: center;
+	}
+	
+	#front-page-performance-text h1,
+	#front-page-thought-text h1 {
+		margin-bottom: 0;
+	}
 	
 	#swipe-guides {
 		position: absolute;
@@ -893,6 +900,9 @@ body#front-page-body {
 		color: #fff;
 		font-size: 16px;
 		opacity: 0.75;
+		-webkit-transition: opacity 0.3s;
+		-moz-transition: opacity 0.3s;
+		transition: opacity 0.3s;
 	}
 	
 	#swipe-guides span {

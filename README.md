@@ -17,6 +17,10 @@ This WordPress theme is built on [Bootstrap](http://getbootstrap.com).
   - Round *Leave a Comment* box corners for Blog posts.
 8. Portfolio single post view
   - Fix ordering of content on mobile - Title now appears at top.
+9. Landing page
+  - On phones, swipe to select section of site you'd like to enter.
+  - On larger touch devices, tap to see a section option - tap again to enter.
+  - On full-sized computers, hover to selection section.
 
 ### v1.3
 1. *Analysis* page
