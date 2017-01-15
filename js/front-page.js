@@ -31,6 +31,7 @@ jQuery(document).ready(function($){ /* WordPress loads jQuery in no conflict mod
     $("#front-page-performance h1").css("opacity", "1");
     $("#swipe-wrapper-performance").css("width", "100%");
     $("#front-page-performance").css("right", "0");
+    $("#swipe-wrapper-performance a").attr("href", "/present");
   }
   });
   
@@ -49,6 +50,7 @@ jQuery(document).ready(function($){ /* WordPress loads jQuery in no conflict mod
     $("#front-page-thought h1").css("opacity", "1");
     $("#swipe-wrapper-thought").css("width", "100%");
     $("#front-page-thought").css("left", "0");
+    $("#swipe-wrapper-thought a").attr("href", "/blog");
   }
   });
   
