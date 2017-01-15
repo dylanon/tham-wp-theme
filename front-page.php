@@ -4,21 +4,21 @@
 
 <div id="front-page-moutheyes"></div>
 
-<!-- <div id="swipe-wrapper-performance"> -->
+<div id="swipe-wrapper-performance">
   <a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" >
     <div id="front-page-performance">
       <h1>Performance</h1>
     </div>
   </a>
-<!-- </div> -->
+</div>
 
-<!-- <div id="swipe-wrapper-thought"> -->
+<div id="swipe-wrapper-thought">
   <a href="<?php get_bloginfo( ‘template_url’ ); ?>/blog" >
     <div id="front-page-thought">
       <h1>Thought</h1>
     </div>
   </a>
-<!-- </div> -->
+</div>
 
 <!-- <div id="front-page-performance" class="flex-center-contents">
   

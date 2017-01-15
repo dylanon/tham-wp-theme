@@ -799,7 +799,7 @@ body#front-page-body {
 	background-size: cover;
 }
 
-/* #swipe-wrapper-performance,
+#swipe-wrapper-performance,
 #swipe-wrapper-thought {
 	overflow: hidden;
 	position: absolute;
@@ -810,7 +810,7 @@ body#front-page-body {
 	-webkit-transition: width 0.1s ease-out;
 	-moz-transition: width 0.1s ease-out;
 	transition: width 0.1s ease-out;
-} */
+}
 
 #front-page-performance {
 	position: absolute;
