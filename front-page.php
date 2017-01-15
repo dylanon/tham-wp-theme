@@ -5,7 +5,7 @@
 <div id="front-page-moutheyes"></div>
 
 <div id="swipe-wrapper-performance">
-  <a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" >
+  <a href="#" >
     <div id="front-page-performance">
       <h1>Performance</h1>
     </div>
@@ -13,7 +13,7 @@
 </div>
 
 <div id="swipe-wrapper-thought">
-  <a href="<?php get_bloginfo( ‘template_url’ ); ?>/blog" >
+  <a href="#" >
     <div id="front-page-thought">
       <h1>Thought</h1>
     </div>

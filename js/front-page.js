@@ -3,7 +3,21 @@ jQuery(document).ready(function($){ /* WordPress loads jQuery in no conflict mod
   // Desktop hover events
   
   $("#front-page-performance, #front-page-thought").mouseenter(function(){
-      $("#front-page-moutheyes").css("opacity", "1");
+    $("#front-page-moutheyes").css("opacity", "1");
+  });
+  
+  $("#front-page-performance").mouseenter(function(){
+    setTimeout(function(){
+      $("#swipe-wrapper-performance a").attr("href", "/present");
+    }, 200);
+    $("#swipe-wrapper-thought a").attr("href", "#");
+  });
+  
+  $("#front-page-thought").mouseenter(function(){
+    setTimeout(function(){
+      $("#swipe-wrapper-thought a").attr("href", "/blog");
+    }, 200);
+    $("#swipe-wrapper-performance a").attr("href", "#");
   });
   
   $("#front-page-performance, #front-page-thought").mouseleave(function(){
