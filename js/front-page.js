@@ -14,19 +14,17 @@ jQuery(document).ready(function($){ /* WordPress loads jQuery in no conflict mod
 
   $("#front-page-rest").swipe({
   swipeLeft:function(event, direction, distance, duration, fingerCount) {
-    //This only fires when the user swipes left
     $("#front-page-performance h1").css("opacity", "1");
-    $(".outer").css("width", "100%");
+    $(".swipe-wrapper").css("width", "100%");
     $("#front-page-performance").css("right", "0");
   }
   });
   
   $("#front-page-performance").swipe({
   swipeRight:function(event, direction, distance, duration, fingerCount) {
-    //This only fires when the user swipes right
     $("#front-page-performance").css("right", "-100%");
     setTimeout(function(){
-      $(".outer").css("width", "0");
+      $(".swipe-wrapper").css("width", "0");
     }, 500);
     $("#front-page-performance h1").css("opacity", "0");
   }

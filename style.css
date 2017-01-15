@@ -799,7 +799,7 @@ body#front-page-body {
 	background-size: cover;
 }
 
-.outer {
+.swipe-wrapper {
 	overflow: hidden;
 	position: absolute;
 	top: 0;
@@ -820,9 +820,9 @@ body#front-page-body {
 	background-color: #b55953;
 	opacity: 0.8;
 	z-index: 1;
- -webkit-transition: right 0.5s ease-out;
-	-moz-transition: right 0.5s ease-out;
-	transition: right 0.5s ease-out;
+ -webkit-transition: right 0.2s ease-out;
+	-moz-transition: right 0.2s ease-out;
+	transition: right 0.2s ease-out;
 }
 
 #front-page-performance h1 {
@@ -832,9 +832,9 @@ body#front-page-body {
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	opacity: 0;
-  -webkit-transition: opacity 0.2s;
-	-moz-transition: opacity 0.2s;
-	transition: opacity 0.2s;
+  -webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
 }
 
 /* #front-page-performance {

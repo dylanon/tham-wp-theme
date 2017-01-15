@@ -4,7 +4,7 @@
 
 <div id="front-page-moutheyes"></div>
 
-<div class="outer">
+<div class="swipe-wrapper">
   <a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" >
     <div id="front-page-performance">
       <h1>Performance</h1>
