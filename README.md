@@ -3,7 +3,10 @@
 This WordPress theme is built on [Bootstrap](http://getbootstrap.com).
 
 ## Changelog
-### v.1.4
+### v1.5
+1. Post titles are easier to read (added shader over featured images).
+
+### v1.4
 1. Fixed *Image Background* page template behaviour - now **really** fills the whole background.
 2. Bugfix: Performance navigation bar now responds to taps/clicks to switch over to Thought.
 3. Add disabled code for jQuery Mobile for future use.
