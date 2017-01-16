@@ -33,7 +33,9 @@
 
           <a href="<?php the_permalink()?>">
 
-            <div class="posts-view-featured-image" style="
+            <div class="posts-view-featured-image">
+              
+              <div class="posts-view-image-shader" style="
               <?php if ( has_post_thumbnail() ) {?>
                 background:url(<?php the_post_thumbnail_url( 'large' ); ?>) no-repeat center center/cover;
                 -webkit-background-size:cover;
@@ -42,19 +44,22 @@
               <?php } else { ?>
                 background:#434d69;
               <?php } ?>">
+              </div>
+              
+              <div class="posts-view-image-text">
+                <p class="h1 posts-view-post-title">                                                                                         
+                  <?php the_title(); ?>                                                                                                      
+                </p>
 
-              <p class="h1 posts-view-post-title">                                                                                         
-                <?php the_title(); ?>                                                                                                      
-              </p>
+                <?php if ( has_term( '', 'portfolio_category' ) === FALSE ) { ?>
+                  <p class="text-uppercase post-date posts-view-post-date"><?php the_time('F j, Y'); ?></p>
+                <?php } ?>
 
-              <?php if ( has_term( '', 'portfolio_category' ) === FALSE ) { ?>
-                <p class="text-uppercase post-date posts-view-post-date"><?php the_time('F j, Y'); ?></p>
-              <?php } ?>
-
-              <p class="posts-view-read-more h4">
-                <?php if ( has_term( '', 'portfolio_category' ) ) { ?>
-                View<?php } else { ?>Read<?php } ?>&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>
-              </p>
+                <p class="posts-view-read-more h4">
+                  <?php if ( has_term( '', 'portfolio_category' ) ) { ?>
+                  View<?php } else { ?>Read<?php } ?>&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>
+                </p>
+              </div>
 
             </div>
 
