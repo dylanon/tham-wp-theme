@@ -196,13 +196,24 @@ a:hover {
 	.navbar-nav { /* Fix link spacing and centering */
 		margin: 0;
 	}
+	.hide-crossover.blue-background,
+	.hide-crossover.red-background {
+		border-top: 1px solid #e7e7e7;
+		font-size: 24px;
+	}
 	.hide-crossover.blue-background {
 		background-color: #434d69;
-		font-size: 24px;
 	}
 	.hide-crossover.red-background {
 		background-color: #b55953;
-		font-size: 24px;
+	}
+	.navbar-default .navbar-nav > li > a.hide-crossover.red-background:hover, /* Stop weird background color changing */
+	.navbar-default .navbar-nav > li > a.hide-crossover.red-background:focus {
+		background-color: #b55953;
+	}
+	.navbar-default .navbar-nav > li > a.hide-crossover.blue-background:hover, /* Stop weird background color changing */
+	.navbar-default .navbar-nav > li > a.hide-crossover.blue-background:focus {
+		background-color: #434d69;
 	}
 	.navbar > .container {
 		padding-left: 0;
