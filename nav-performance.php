@@ -73,4 +73,6 @@
   
 </div><!-- #nav-crossover -->
 
-<div id="page-content"><!-- closed in Footer -->
+<!-- for navbar javascript - change when mouse enters #page-content
+     - closed in footer.php -->
+<div id="page-content">

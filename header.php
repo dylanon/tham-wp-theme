@@ -44,5 +44,5 @@
             </div>
           <?php } ?>
     
-          <div class="page-wrapper">
+          <div class="page-wrapper"><!-- for sticky footer - contains navbar & page content (not footer) -->
         <?php } ?>

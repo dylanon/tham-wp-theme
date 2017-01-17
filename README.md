@@ -1,10 +1,14 @@
 # tham-wp-theme
 
-This WordPress theme is built on [Bootstrap](http://getbootstrap.com).
+This WordPress theme is made possible by the following awesome code:
+- [Bootstrap](http://getbootstrap.com)
+- [*Portfolio Post Type*](https://github.com/devinsays/portfolio-post-type) by Devin Price and Gary Jones
+- [TouchSwipe](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin) by Matt Bryson
 
 ## Changelog
 ### v1.5
 1. Post titles are easier to read (added shader over featured images).
+2. Made Footer sticky - appears at bottom even when content doesn't fill the page.
 
 ### v1.4
 1. Fixed *Image Background* page template behaviour - now **really** fills the whole background.

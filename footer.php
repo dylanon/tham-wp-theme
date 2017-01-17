@@ -3,21 +3,25 @@
 } else {
   // Include footer ?>
 
-      <div class="container-fluid footer text-center small">
+<!-- #page-content from nav-thought.php and nav-performance.php - for navbar javascript -->
+</div>
 
-        <p>
-          &copy;&nbsp;<?php echo date("Y") ?> Taylor Hammond
-        </p>
+<!-- push sticky footer down by its height just in case -->
+<div class="push-footer"></div>
 
-      </div>
+<!-- .page-wrapper for sticky footer -->
+</div>
 
-  </div><!-- #page-content from Master Nav files -->
-
-  </div><!-- .page-wrapper -->
+<!-- the actual footer -->
+<div class="container-fluid footer text-center small">
+  <p>
+    &copy;&nbsp;<?php echo date("Y") ?> Taylor Hammond
+  </p>
+</div>
 
 <?php } ?>
 
-    <?php wp_footer(); ?>
+<?php wp_footer(); ?>
 
-  </body>
+</body>
 </html>

@@ -408,7 +408,7 @@ html, body {
 }
 
 .bottom-padded { /* Might want to change this class name to better reflect its function */
-	padding-bottom: 75px;
+	padding-bottom: 25px;
 	padding-top: 20px; /* Padding to separate top of page content from navbar */
 }
 
@@ -416,10 +416,10 @@ html, body {
 	padding: 0;
 }
 
-.page-wrapper {
+/* .page-wrapper {
 	min-height: 100%;
 	position: relative;
-}
+} */
 
 /* Blog Styles (Archive/Category View) */
 .blog-post-preview {
@@ -765,12 +765,24 @@ div.posts-view-pagination .nav-links {
 
 /* Footer */
 
-/* .footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	margin-top: 30px;
-} */
+.footer {
+	margin: 0 0 4px 0;
+}
+
+.footer p {
+	margin: 0;
+}
+
+	/* Make footer sticky footer */
+		.footer,
+		.push-footer {
+			height: 16px; /* footer height */
+		}
+
+		.page-wrapper {
+			min-height: 100%;
+			margin: 0 auto -16px; /* negative footer height */
+		}
 
 /* Front Page */
 
