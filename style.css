@@ -199,7 +199,8 @@ a:hover {
 	.hide-crossover.blue-background,
 	.hide-crossover.red-background {
 		border-top: 1px solid #e7e7e7;
-		font-size: 24px;
+		font-size: 28px; /* Match .title-block h1 */
+		padding: 3px 0;
 	}
 	.hide-crossover.blue-background {
 		background-color: #434d69;
@@ -277,7 +278,7 @@ a:hover {
 }
 
 .title-block {
-	border-top: 1px solid #e7e7e7;
+	border-top: 1px solid #e7e7e7; /* #e0e0e0 ? */
 	-webkit-filter: drop-shadow(0px 1px 1px #727272);
 	filter: drop-shadow(0px 1px 1px #727272);
 }
@@ -299,7 +300,7 @@ a:hover {
 
 .title-block h1 {
 	margin: 0;
-	font-size: 24px;
+	font-size: 28px;
 }
 
 @media (min-width: 768px) {
