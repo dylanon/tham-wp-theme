@@ -188,6 +188,40 @@ a:hover {
   padding-left: 0px;
 }
 
+@media (max-width: 767px) {
+	.navbar-right {
+		font-size: 20px;
+		text-align: center;
+	}
+	.navbar-nav { /* Fix link spacing and centering */
+		margin: 0;
+	}
+	.hide-crossover.blue-background {
+		background-color: #434d69;
+		font-size: 24px;
+	}
+	.hide-crossover.red-background {
+		background-color: #b55953;
+		font-size: 24px;
+	}
+	.navbar > .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navbar-header {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 5px; /* Add the bottom padding removed in the rule directly below */
+	}
+	nav.navbar.navbar-default.text-uppercase { /* This fixes a bottom padding issue for the mobile nav contents 
+																								without breaking things. Weird. */
+		padding-bottom: 0;
+	}
+/* 	.navbar-default {
+		padding-bottom: 0;
+	} */
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
 	.nav-links {
 		font-size: 20px;
@@ -264,7 +298,6 @@ a:hover {
 	.hide-crossover {
 	display: none !important;
 	}
-	
 	.navbar { /* Soften bottom edge of navbar */
 		-webkit-filter: drop-shadow(0px 1px 1px #727272);
 		filter: drop-shadow(0px 1px 1px #727272);
@@ -366,7 +399,7 @@ img.taylor-brand-horiz {
 }
 
 .navbar-nav {
-  margin: 0px -15px 0px 0px;
+/*   margin: 0px -15px 0px 0px; */
   padding-top: 3px;
 }
 .navbar-nav > li > a {
