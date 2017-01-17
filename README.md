@@ -2,8 +2,9 @@
 
 This WordPress theme is made possible by the following awesome code:
 - [Bootstrap](http://getbootstrap.com)
-- [*Portfolio Post Type*](https://github.com/devinsays/portfolio-post-type) by Devin Price and Gary Jones
 - [TouchSwipe](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin) by Matt Bryson
+- [*Portfolio Post Type*](https://github.com/devinsays/portfolio-post-type) by Devin Price and Gary Jones
+- [Bootstrap on Wordpress Theme](https://github.com/babobski/bootstrap-on-wordpress-theme) by babobski (for comments)
 
 ## Changelog
 ### v1.5
