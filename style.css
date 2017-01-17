@@ -220,10 +220,8 @@ a:hover {
   line-height: 20px;*/
 }
 
-.navbar-default {
-	border-left: 0;
-	border-right: 0;
-	border-top: 0;
+.navbar { /* Remove default borders */
+	border: 0;
 }
 
 .navbar-default, .title-block {
@@ -231,6 +229,12 @@ a:hover {
 	font-family: "Arial Black", Gadget, sans-serif;
 	color: #fff;
 	padding: 5px 0px;
+}
+
+.title-block {
+	border-top: 1px solid #e7e7e7;
+	-webkit-filter: drop-shadow(0px 1px 1px #727272);
+	filter: drop-shadow(0px 1px 1px #727272);
 }
 
 .navbar { /* Remove extra bottom margin on navbar */
@@ -259,6 +263,11 @@ a:hover {
 	}
 	.hide-crossover {
 	display: none !important;
+	}
+	
+	.navbar { /* Soften bottom edge of navbar */
+		-webkit-filter: drop-shadow(0px 1px 1px #727272);
+		filter: drop-shadow(0px 1px 1px #727272);
 	}
 }
 
