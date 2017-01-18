@@ -11,7 +11,7 @@ This WordPress theme is made possible by the following awesome code:
 1. Post titles are easier to read (added shader over featured images).
 2. Made Footer sticky - appears at bottom even when content doesn't fill the page.
 3. Mobile nav menu
-- Crossover has a different background color.
+- Crossover has a different background color and an arrow.
 - *Performance* and *Thought* links are bigger.
 - Centered links and made them bigger.
 
