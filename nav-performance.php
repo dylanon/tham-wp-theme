@@ -63,7 +63,6 @@
             <li <?php if ( $postcat_analysis or $mysection == 'analysis' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/analysis">Analysis</a></li>
             <li <?php if ( $pagename == 'cv' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/cv">CV</a></li>
             <li <?php if ( $pagename == 'about' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/about">About</a></li>
-            <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present" class="hide-crossover">Performance</a></li>
           </ul>
         </div>
          <h1 class="section-heading navbar-right" id="nav-crossback-trigger">Thought</h1>
