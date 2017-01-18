@@ -22,7 +22,8 @@
         <!-- Make 'Past' page and all portfolio items light up 'Past' in the nav bar. -->
         <li <?php if ( $pagename == 'past' or $mysection == 'past' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/past">Past</a></li>
         <li <?php if ( $pagename == 'present' ) { ?>class="active"<?php } ?>><a href="<?php get_bloginfo( ‘template_url’ ); ?>/present">Present</a></li>
-        <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/blog" class="hide-crossover blue-background">Thought</a></li>
+        <li><a href="<?php get_bloginfo( ‘template_url’ ); ?>/blog" class="hide-crossover blue-background">
+          Thought&nbsp;<span class="glyphicon glyphicon-arrow-right fix-arrow-style"></span></a></li>
       </ul>
        <h1 class="section-heading navbar-right" id="nav-crossover-trigger">Performance</h1>
     </div>

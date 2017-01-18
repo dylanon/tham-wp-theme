@@ -420,6 +420,10 @@ img.taylor-brand-horiz {
   line-height: 35px;
 }
 
+.fix-arrow-style {
+	font-size: 25px;
+}
+
 /* Thought Nav Styles */
 .nav-thought {
 	background-color: #434d69;
