@@ -14,6 +14,7 @@ This WordPress theme is made possible by the following awesome code:
 - Crossover has a different background color and an arrow.
 - *Performance* and *Thought* links are bigger.
 - Centered links and made them bigger.
+4. Revert Portfolio post content stacking to original order - On mobile, featured image is displayed first.
 
 ### v1.4
 1. Fixed *Image Background* page template behaviour - now **really** fills the whole background.

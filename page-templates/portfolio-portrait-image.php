@@ -20,9 +20,23 @@ Template Post Type: portfolio
 			<div class="row">
 
 				<?php if ( has_post_thumbnail() ) { ?>
+				<!-- Set left box (featured image) width to 5/12 -->
+				<div class="col-sm-5 featured-image">
+					<?php the_post_thumbnail( 'full', array( 'class' => 'border-red' ) ) ?>
+					<div class="featured-image-caption">
+						<?php the_post_thumbnail_caption() ?>
+					</div>
+					<!-- Meta Box: Beneath featured image -->
+					<div class="portfolio-meta-box">
+						<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-left' ) ); ?>
+					</div>
+				</div><!-- .col-sm-5 -->
+				<?php } ?>
+				
+				<?php if ( has_post_thumbnail() ) { ?>
 
 					<!-- Set right box (content) width to 7/12 -->
-					<div class="col-sm-7 col-sm-push-5">
+					<div class="col-sm-7">
 
 				<?php } else { ?>
 
@@ -46,21 +60,7 @@ Template Post Type: portfolio
 						<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-right' ) ); ?>
 					</div>
 
-					</div><!-- .col-sm-5 | .col-sm-12 when there is no featured image -->
-
-				<?php if ( has_post_thumbnail() ) { ?>
-				<!-- Set left box (featured image) width to 5/12 -->
-				<div class="col-sm-5 col-sm-pull-7 featured-image">
-					<?php the_post_thumbnail( 'full', array( 'class' => 'border-red' ) ) ?>
-					<div class="featured-image-caption">
-						<?php the_post_thumbnail_caption() ?>
-					</div>
-					<!-- Meta Box: Beneath featured image -->
-					<div class="portfolio-meta-box">
-						<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-left' ) ); ?>
-					</div>
-				</div><!-- .col-sm-7 -->
-				<?php } ?>
+					</div><!-- .col-sm-7 | .col-sm-12 when there is no featured image -->
 
 			</div><!-- .row -->
 
