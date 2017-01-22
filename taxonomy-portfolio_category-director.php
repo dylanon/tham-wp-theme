@@ -5,10 +5,12 @@
 <?php get_template_part( 'nav-performance' ); // Navigation bar ?>
 
     <div class="bottom-padded container">
+    
+      <?php get_template_part( 'nav-portfolio' ); // Portfolio nav ?>
       
-      <h1 class="text-center">
+<!--       <h1 class="text-center">
         Projects as Director
-      </h1>
+      </h1> -->
       
       <?php get_template_part( 'master_posts-view' ); // Posts View master code for category, archive,
                                                       // and portfolio category pages ?>
