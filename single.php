@@ -51,7 +51,7 @@
 
 			<?php } ?>
 
-			<span class="post-wrapper"><?php the_content('(Read more ...)'); ?></span>
+			<span class="post-wrapper editor-content"><?php the_content('(Read more ...)'); ?></span>
 			<p class="small text-right text-uppercase img-floats-fix"><br />
 				<?php the_tags( 'Tagged in: ' ); ?><br />
 				<?php the_time('l F j, Y'); ?><br /><br />

@@ -23,7 +23,7 @@
 						<?php the_post_thumbnail_caption() ?>
 					</div>
 					<!-- Meta Box: Beneath featured image -->
-					<div class="portfolio-meta-box">
+					<div class="editor-content portfolio-meta-box">
 						<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-left' ) ); ?>
 					</div>
 				</div><!-- .col-sm-7 -->
@@ -44,7 +44,7 @@
 					<div class="portfolio-content-area">
 
 						<h1 class="text-uppercase"><?php the_title(); ?></h1>
-						<span class="post-wrapper"><?php the_content('(Read more ...)'); ?></span>
+						<span class="editor-content post-wrapper"><?php the_content('(Read more ...)'); ?></span>
 						<p class="small text-right text-uppercase img-floats-fix"><br />
 							<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
 						</p>
@@ -52,7 +52,7 @@
 					</div>
 
 					<!-- Meta Box: Beneath main content area -->
-					<div class="portfolio-meta-box">
+					<div class="editor-content portfolio-meta-box">
 						<?php echo do_shortcode( rwmb_meta( 'portfolio-customfield-right' ) ); ?>
 					</div>
 
