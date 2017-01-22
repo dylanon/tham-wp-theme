@@ -103,6 +103,7 @@ This WordPress theme is made possible by the following awesome code:
 - plugin: FooGallery
 - plugin: FooBox Image Lightbox
 - plugin: Portfolio Post Type by Devin Price
+- plugin: TinyMCE Advanced
 
 ### Known issues:
 No known issues right now.
