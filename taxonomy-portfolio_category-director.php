@@ -4,9 +4,9 @@
 
 <?php get_template_part( 'nav-performance' ); // Navigation bar ?>
 
-    <div class="bottom-padded container">
-    
-      <?php get_template_part( 'nav-portfolio' ); // Portfolio nav ?>
+  <?php get_template_part( 'nav-portfolio' ); // Portfolio nav ?>
+
+  <div class="bottom-padded container">
       
 <!--       <h1 class="text-center">
         Projects as Director

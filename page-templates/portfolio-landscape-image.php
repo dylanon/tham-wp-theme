@@ -10,9 +10,9 @@ Template Post Type: portfolio
 
 <?php get_template_part( 'nav-performance' ); // Navigation bar ?>
 
+<?php get_template_part( 'nav-portfolio' ); // Portfolio nav ?>
+
 <div class="bottom-padded container">
-	
-	<?php get_template_part( 'nav-portfolio' ); // Portfolio nav ?>
 
 	<!-- Start the WordPress Loop -->
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
