@@ -7,6 +7,11 @@ This WordPress theme is made possible by the following awesome code:
 - [Bootstrap on Wordpress Theme](https://github.com/babobski/bootstrap-on-wordpress-theme) by babobski (for comments)
 
 ## Changelog
+### v1.6
+1. Post/page editor
+  - Remove baked-in custom styles, replace with plugin (*TinyMCE Advanced*)
+  - Restyle headings in posts/pages - No longer all caps or in *Courier New* font.
+
 ### v1.5
 1. Post titles are easier to read (added shader over featured images).
 2. Made Footer sticky - appears at bottom even when content doesn't fill the page.

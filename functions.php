@@ -62,14 +62,14 @@ add_action( 'after_setup_theme', 'custom_theme_setup' );
 // // Attach callback to 'tiny_mce_before_init' 
 // add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
-// /**
-//  * Registers an editor stylesheet for the theme.
-//  * Previews custom editor themes in TinyMCE editor.
-//  */
-// function wpdocs_theme_add_editor_styles() {
-//     add_editor_style();
-// }
-// add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+/**
+ * Registers an editor stylesheet for the theme.
+ * Previews custom editor themes in TinyMCE editor.
+ */
+function wpdocs_theme_add_editor_styles() {
+    add_editor_style();
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 
 function get_custom_cat_template($single_template) { /* Register custom single post template for Reviews */
      global $post;
