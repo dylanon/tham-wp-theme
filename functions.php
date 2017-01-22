@@ -32,44 +32,44 @@ add_action( 'after_setup_theme', 'custom_theme_setup' );
 //   }
 // }
 
-// Add Styleselect functionality to visual post editor
-// Callback function to insert 'styleselect' into the $buttons array
-function my_mce_buttons_2( $buttons ) {
-	array_unshift( $buttons, 'styleselect' );
-	return $buttons;
-}
-// Register our callback to the appropriate filter
-add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
+// // Add Styleselect functionality to visual post editor
+// // Callback function to insert 'styleselect' into the $buttons array
+// function my_mce_buttons_2( $buttons ) {
+// 	array_unshift( $buttons, 'styleselect' );
+// 	return $buttons;
+// }
+// // Register our callback to the appropriate filter
+// add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
 
-// Register custom styles in visual post editor
-// Callback function to filter the MCE settings
-function my_mce_before_init_insert_formats( $init_array ) {  
-	// Define the style_formats array
-	$style_formats = array(  
-		// Each array child is a format with it's own settings
-		array(  
-			'title' => 'Project Info',
-			'inline' => 'span',
-			'classes' => 'portfolio-info',
-		),  
-	);  
-	// Insert the array, JSON ENCODED, into 'style_formats'
-	$init_array['style_formats'] = json_encode( $style_formats );  
+// // Register custom styles in visual post editor
+// // Callback function to filter the MCE settings
+// function my_mce_before_init_insert_formats( $init_array ) {  
+// 	// Define the style_formats array
+// 	$style_formats = array(  
+// 		// Each array child is a format with it's own settings
+// 		array(  
+// 			'title' => 'Project Info',
+// 			'inline' => 'span',
+// 			'classes' => 'portfolio-info',
+// 		),  
+// 	);  
+// 	// Insert the array, JSON ENCODED, into 'style_formats'
+// 	$init_array['style_formats'] = json_encode( $style_formats );  
 	
-	return $init_array;  
+// 	return $init_array;  
   
-} 
-// Attach callback to 'tiny_mce_before_init' 
-add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+// } 
+// // Attach callback to 'tiny_mce_before_init' 
+// add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
-/**
- * Registers an editor stylesheet for the theme.
- * Previews custom editor themes in TinyMCE editor.
- */
-function wpdocs_theme_add_editor_styles() {
-    add_editor_style();
-}
-add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+// /**
+//  * Registers an editor stylesheet for the theme.
+//  * Previews custom editor themes in TinyMCE editor.
+//  */
+// function wpdocs_theme_add_editor_styles() {
+//     add_editor_style();
+// }
+// add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 
 function get_custom_cat_template($single_template) { /* Register custom single post template for Reviews */
      global $post;
