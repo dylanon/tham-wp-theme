@@ -2,12 +2,12 @@
 <nav class="nav-portfolio">
   <div class="container">
     <div class="row text-center">
-      <div class="col-xs-12 col-sm-2">
+      <div class="col-xs-12 col-sm-4">
         <p>
-          Projects as:
+          View more projects:
         </p>
       </div>
-      <div class="col-sm-2"></div>
+<!--       <div class="col-sm-2"></div> -->
       <div class="col-xs-6 col-sm-2">
         <a href="<?php get_bloginfo( ‘template_url’ ); ?>/past/actor">Actor</a>
       </div>
