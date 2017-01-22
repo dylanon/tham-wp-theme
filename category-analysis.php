@@ -74,7 +74,6 @@
             <?php } ?>
             <div><?php the_excerpt('(Read more ...)'); ?></div>
             <div class="small text-right text-uppercase img-floats-fix">
-              <?php edit_post_link( '[ Edit This ]' ); ?>
             </div>
           </div>
 
