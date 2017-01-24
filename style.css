@@ -738,18 +738,45 @@ nav.nav-portfolio a {
 	margin: 0 auto;
 	padding: 5px 0;
 	text-decoration: none;
+	white-space: nowrap;
 }
 .portfolio-active > a {
 	color: #dfb377;
 	background-color: #434d69;
-	border-radius: 4px;
+	border-radius: 5px;
+}
+.portfolio-arrow-fix {
+	font-size: 20px;
+	line-height: 14px;
+}
+
+@media ( max-width: 767px ) {
+	nav.nav-portfolio > .container > div > div {
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
 }
 
 @media ( min-width: 768px ) {
 	nav.nav-portfolio p {
 		margin: 0;
 		text-align: left;
-		padding-left: 5px;
+		padding: 5px 0 5px 5px;
+	}
+	nav.nav-portfolio a {
+		width: 100%;
+	}
+}
+
+@media ( min-width: 768px ) and ( max-width: 991px ) {
+	.portfolio-arrow-fix {
+		display: none;
+	}
+}
+
+@media ( min-width: 991px ) {
+	nav.nav-portfolio > .container {
+		width: 875px;
 	}
 }
 
