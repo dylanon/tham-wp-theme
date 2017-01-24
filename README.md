@@ -11,6 +11,8 @@ This WordPress theme is made possible by the following awesome code:
 1. Post/page editor
   - Remove baked-in custom styles, replace with plugin (*TinyMCE Advanced*)
   - Restyle headings in posts/pages - No longer all caps or in *Courier New* font.
+2. Share buttons
+  - Added styling for *AddThis* plugin social media share buttons
 
 ### v1.5
 1. Post titles are easier to read (added shader over featured images).
@@ -104,6 +106,7 @@ This WordPress theme is made possible by the following awesome code:
 - plugin: FooBox Image Lightbox
 - plugin: Portfolio Post Type by Devin Price
 - plugin: TinyMCE Advanced
+- plugin: Share Buttons by AddThis
 
 ### Known issues:
 No known issues right now.
