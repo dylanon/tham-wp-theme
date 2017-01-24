@@ -721,10 +721,11 @@ div.posts-view-pagination .nav-links {
 	border: 4px solid #dfb377;
 }
 
-/* Portfolio nav */
+/* Portfolio Nav */
 
 nav.nav-portfolio {
-	padding-top: 24px;
+	padding-top: 18px;
+	margin-bottom: -2px;
 	font-family: "Arial Black", Gadget, sans-serif;
 	text-transform: uppercase;
 }
@@ -732,7 +733,16 @@ nav.nav-portfolio p {
 	font-family: "Arial Black", Gadget, sans-serif;
 }
 nav.nav-portfolio a {
-
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	padding: 5px 0;
+	text-decoration: none;
+}
+.portfolio-active > a {
+	color: #dfb377;
+	background-color: #434d69;
+	border-radius: 4px;
 }
 
 @media ( min-width: 768px ) {
