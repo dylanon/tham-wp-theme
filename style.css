@@ -1139,3 +1139,9 @@ li.comment.depth-1 > div.comment-body > p {
 		border-color: transparent;
 	}
 }
+
+/* Add This Plugin - Custom CSS */
+.addthis_toolbox {
+	float: right;
+	padding-top: 18px;
+}
