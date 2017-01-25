@@ -4,10 +4,12 @@
   function activePortfolioNav( $portfolio_archive_section, $portfolio_taxonomy_template ) {
     if ( is_archive() ) {
       if ( $portfolio_archive_section === $portfolio_taxonomy_template ) {
-        echo " portfolio-active";
+        return TRUE;
       }
     } elseif ( has_term ( $portfolio_archive_section, 'portfolio_category' ) ) {
-      echo " portfolio-active";
+      return TRUE;
+    } else {
+      return FALSE;
     }
   }
 ?>
@@ -21,25 +23,24 @@
           View projects as:
         </p>
       </div>
-<!--       <div class="col-sm-2"></div> -->
-      <div class="col-xs-6 col-sm-2<?php activePortfolioNav( 'actor', $portfoliosection ); ?>">
+      <div class="col-xs-6 col-sm-2<?php if ( activePortfolioNav( 'actor', $portfoliosection ) ) { ?> portfolio-active<?php } ?>">
         <a href="<?php get_bloginfo( ‘template_url’ ); ?>/past/actor">
-          Actor<?php if ( has_term ( 'actor', 'portfolio_category' ) === FALSE ) { ?> <span class="portfolio-arrow-fix">&#8594;</span><?php } ?>
+          Actor<?php if ( activePortfolioNav( 'actor', $portfoliosection ) == FALSE ) { ?> <span class="portfolio-arrow-fix">&#8594;</span><?php } ?>
         </a>
       </div>
-      <div class="col-xs-6 col-sm-2<?php activePortfolioNav( 'creator', $portfoliosection ); ?>">
+      <div class="col-xs-6 col-sm-2<?php if ( activePortfolioNav( 'creator', $portfoliosection ) ) { ?> portfolio-active<?php } ?>">
         <a href="<?php get_bloginfo( ‘template_url’ ); ?>/past/creator">
-          Creator<?php if ( has_term ( 'creator', 'portfolio_category' ) === FALSE ) { ?> <span class="portfolio-arrow-fix">&#8594;</span><?php } ?>
+          Creator<?php if ( activePortfolioNav( 'creator', $portfoliosection ) == FALSE ) { ?> <span class="portfolio-arrow-fix">&#8594;</span><?php } ?>
         </a>
       </div>
-      <div class="col-xs-6 col-sm-2<?php activePortfolioNav( 'director', $portfoliosection ); ?>">
+      <div class="col-xs-6 col-sm-2<?php if ( activePortfolioNav( 'director', $portfoliosection ) ) { ?> portfolio-active<?php } ?>">
         <a href="<?php get_bloginfo( ‘template_url’ ); ?>/past/director">
-          Director<?php if ( has_term ( 'director', 'portfolio_category' ) === FALSE ) { ?> <span class="portfolio-arrow-fix">&#8594;</span><?php } ?>
+          Director<?php if ( activePortfolioNav( 'director', $portfoliosection ) == FALSE ) { ?> <span class="portfolio-arrow-fix">&#8594;</span><?php } ?>
         </a>
       </div>
-      <div class="col-xs-6 col-sm-2<?php activePortfolioNav( 'teacher', $portfoliosection ); ?>">
+      <div class="col-xs-6 col-sm-2<?php if ( activePortfolioNav( 'teacher', $portfoliosection ) ) { ?> portfolio-active<?php } ?>">
         <a href="<?php get_bloginfo( ‘template_url’ ); ?>/past/teacher">
-          Teacher<?php if ( has_term ( 'teacher', 'portfolio_category' ) === FALSE ) { ?> <span class="portfolio-arrow-fix">&#8594;</span><?php } ?>
+          Teacher<?php if ( activePortfolioNav( 'teacher', $portfoliosection ) == FALSE ) { ?> <span class="portfolio-arrow-fix">&#8594;</span><?php } ?>
         </a>
       </div>
     </div>
