@@ -13,6 +13,7 @@ This WordPress theme is made possible by the following awesome code:
   - Restyle headings in posts/pages - No longer all caps or in *Courier New* font.
 2. Share buttons
   - Added styling for *AddThis* plugin social media share buttons
+3. New: Portfolio Navigation menu - Easily change sections & see which categories apply to the posts in view.
 
 ### v1.5
 1. Post titles are easier to read (added shader over featured images).

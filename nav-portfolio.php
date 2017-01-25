@@ -1,19 +1,5 @@
 <?php global $portfoliosection; // Access global variable from taxonomy-portfolio_category-*.php ?>
 
-<?php
-  function activePortfolioNav( $portfolio_archive_section, $portfolio_taxonomy_template ) {
-    if ( is_archive() ) {
-      if ( $portfolio_archive_section === $portfolio_taxonomy_template ) {
-        return TRUE;
-      }
-    } elseif ( has_term ( $portfolio_archive_section, 'portfolio_category' ) ) {
-      return TRUE;
-    } else {
-      return FALSE;
-    }
-  }
-?>
-
 <!-- Portfolio nav -->
 <nav class="nav-portfolio">
   <div class="container">

@@ -127,4 +127,17 @@ function custom_rewrite_rule() {
 }
 add_action('init', 'custom_rewrite_rule');
 
+// Portfolio Nav - Light up for applicable portfolio categories in posts view and single view
+function activePortfolioNav( $portfolio_archive_section, $portfolio_taxonomy_template ) {
+	if ( is_archive() ) {
+		if ( $portfolio_archive_section === $portfolio_taxonomy_template ) {
+			return TRUE;
+		}
+	} elseif ( has_term ( $portfolio_archive_section, 'portfolio_category' ) ) {
+		return TRUE;
+	} else {
+		return FALSE;
+	}
+}
+
 ?>
