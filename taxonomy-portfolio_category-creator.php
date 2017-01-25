@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php $mysection = 'past'; ?>
+<?php $mysection = 'past'; $portfoliosection = 'creator'; ?>
 
 <?php get_template_part( 'nav-performance' ); // Navigation bar ?>
 
