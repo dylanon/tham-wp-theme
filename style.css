@@ -913,6 +913,22 @@ nav.nav-portfolio a {
 			margin: 0 auto -16px; /* negative footer height */
 		}
 
+	/* WordPress Footer Menu Styles */
+	.footer p { /* Don't break to a new line afterward */
+		display: inline;
+	}
+
+	.footer-menu-ul {
+		list-style-type: none;
+		display: inline;
+		margin: 0;
+		padding: 0;
+	}
+	.footer-menu-ul > li {
+		display: inline; /* Make horizontal */
+		padding: 0 4px;
+	}
+
 /* Front Page */
 
 #front-page-rest {

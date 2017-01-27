@@ -21,6 +21,12 @@ function custom_theme_setup() {
 
 add_action( 'after_setup_theme', 'custom_theme_setup' );
 
+// Add custom nav menu support
+function register_custom_nav_menu() {
+  register_nav_menu('footer-menu',__( 'Footer Menu' ));
+}
+add_action( 'init', 'register_custom_nav_menu' );
+
 // function the_post_thumbnail_caption() {
 //   global $post;
 
