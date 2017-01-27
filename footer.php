@@ -15,7 +15,10 @@
 <!-- the actual footer -->
 <div class="container-fluid footer text-center small">
   <p>
-    &copy;&nbsp;<?php echo date("Y") ?> Taylor Hammond&nbsp;&nbsp;/
+    &copy;&nbsp;<?php echo date("Y") ?> Taylor Hammond
+    <?php if ( has_nav_menu( 'footer-menu' ) ) { ?>
+      &nbsp;/
+    <?php } ?>
   </p>
   <?php wp_nav_menu( array( 'theme_location' => 'footer-menu',
                             'fallback_cb'    => 'false',
