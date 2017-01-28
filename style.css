@@ -697,7 +697,6 @@ div.posts-view-pagination .nav-links {
 
 .featured-image > img {
 	display: block;
-/*   max-width: 100%; */
 	width: 100%; /* Image takes up full width available */
   height: auto;
 	border-radius: 5px; /* round corners */
@@ -729,9 +728,6 @@ nav.nav-portfolio {
 	font-family: "Arial Black", Gadget, sans-serif;
 	text-transform: uppercase;
 }
-nav.nav-portfolio p {
-	font-family: "Arial Black", Gadget, sans-serif;
-}
 nav.nav-portfolio a {
 	display: block;
 	width: 90%;
@@ -758,11 +754,6 @@ nav.nav-portfolio a {
 }
 
 @media ( min-width: 768px ) {
-	nav.nav-portfolio p {
-		margin: 0;
-		text-align: left;
-		padding: 5px 0 5px 5px;
-	}
 	nav.nav-portfolio a {
 		width: 100%;
 	}
@@ -776,7 +767,7 @@ nav.nav-portfolio a {
 
 @media ( min-width: 991px ) {
 	nav.nav-portfolio > .container {
-		width: 875px;
+		width: 700px;
 	}
 }
 
