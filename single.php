@@ -35,7 +35,8 @@
 						</p></strong>
 					</div>
 					<div class="col-sm-9 col-sm-pull-3 no-padding">
-						<h1 class="text-uppercase"><?php the_title(); ?></h1> <!-- Post title -->
+						<h1 class="text-uppercase single-post-title"><?php the_title(); ?></h1> <!-- Post title -->
+						<p class="post-date single-post-date text-uppercase"><?php the_time('l F j, Y'); ?></p><!-- Post date -->
 					</div>
 				</div>
 			</div>
@@ -52,10 +53,9 @@
 			<?php } ?>
 
 			<span class="post-wrapper editor-content"><?php the_content('(Read more ...)'); ?></span>
-			<p class="small text-right text-uppercase img-floats-fix"><br />
-				<?php the_tags( 'Tagged in: ' ); ?><br />
-				<?php the_time('l F j, Y'); ?><br /><br />
-				<strong><?php edit_post_link( '[ Edit This ]' ); ?></strong>
+			<p class="small text-right text-uppercase img-floats-fix">
+				<?php the_tags( '<br />Tagged in: ' ); ?>
+				<strong><?php edit_post_link( '[ Edit This ]', '<br /><br />' ); ?></strong>
 			</p>
 			
 			<!-- Older and Newer post links -->

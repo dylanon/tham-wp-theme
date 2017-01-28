@@ -18,6 +18,9 @@ This WordPress theme is made possible by the following awesome code:
 4. Portfolio - single posts
   - Add a title at the top on mobile
 5. Bugfix: Mobile viewport is properly sized now.
+6. Blog and Analysis
+  - Add support for tags
+  - Move date under post title and style it red
 
 ### v1.6
 1. Post/page editor

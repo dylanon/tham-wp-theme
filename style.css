@@ -520,6 +520,8 @@ html, body {
 
 .post-date {
 	font-family: "Courier New", Courier, monospace;
+	font-size: 18px;
+	color: #b55953;
 	position: relative;
 	top: -5px;
 }
@@ -534,11 +536,6 @@ html, body {
 	}
 }
 
-.post-date { /* Duplicate? See above */
-	font-size: 18px;
-	color: #b55953;
-}
-
 /* Blog Styles (Single Post View) */
 
 .slim-width {
@@ -547,6 +544,11 @@ html, body {
 
 .yellow-border {
 	border-color: #dfb377;
+}
+
+.single-post-title,
+.single-post-date {
+	margin-bottom: 0;
 }
 
 @media (min-width: 450px) { /* Make featured image smaller on larger devices */
