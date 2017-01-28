@@ -17,6 +17,7 @@ This WordPress theme is made possible by the following awesome code:
   - Unshade blue background for posts without a featured image - Colour now appears properly.
 4. Portfolio - single posts
   - Add a title at the top on mobile
+5. Bugfix: Mobile viewport is properly sized now.
 
 ### v1.6
 1. Post/page editor

@@ -240,9 +240,22 @@ a:hover {
 																								without breaking things. Weird. */
 		padding-bottom: 0;
 	}
-/* 	.navbar-default {
-		padding-bottom: 0;
-	} */
+	/* Fix viewport exceeding mobile screen size */
+	.container > .navbar-header,
+	.container > .navbar-collapse {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.navbar-collapse {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navbar-header > .navbar-toggle {
+		margin-right: 0;
+	}
+	.navbar-header > a.navbar-brand {
+		margin-left: 0;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
