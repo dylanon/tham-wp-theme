@@ -21,6 +21,8 @@ This WordPress theme is made possible by the following awesome code:
 6. Blog and Analysis
   - Add support for tags
   - Move date under post title and style it red
+7. 404 Error Page
+  - Loads when the user tries to access a URL that doesn't exist, and displays a message.
 
 ### v1.6
 1. Post/page editor

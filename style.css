@@ -1206,6 +1206,11 @@ li.comment.depth-1 > div.comment-body > p {
 	}
 }
 
+/* 404 Error */
+.four-o-four {
+	padding-top: 125px;
+}
+
 /* Add This Plugin - Custom CSS */
 .addthis_toolbox {
 	float: right;
