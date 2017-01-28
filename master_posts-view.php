@@ -22,6 +22,8 @@
                 -o-background-size:cover;
               <?php } else { ?>
                 background:#434d69;
+                -webkit-filter: brightness(1);
+	              filter: brightness(1);
               <?php } ?>">
               </div>
               
