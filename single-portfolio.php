@@ -14,6 +14,8 @@
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 		<div class="portfolio-post">
+			
+			<h1 class="text-uppercase text-center hide-over-768"><?php the_title(); ?></h1>
 
 			<div class="row">
 

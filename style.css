@@ -780,14 +780,21 @@ nav.nav-portfolio a {
 	padding: 5px 15px 5px 15px;
 }
 
-.portfolio-content-area h1 {
+.portfolio-content-area > h1 {
 	margin: 10px 0 0 0;
+	font-size: 30px; /* Only on mobile - this is a secondary location for the title */
 }
 
 .portfolio-info {
 	font-family: "Courier New", Courier, monospace;
 	font-size: 20px;
 	text-transform: lowercase;
+}
+
+@media ( min-width: 768px ) {
+	.portfolio-content-area > h1 {
+		font-size: 36px; /* Normal size when not on mobile */
+	}
 }
 
 /* Page Styles */

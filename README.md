@@ -15,6 +15,8 @@ This WordPress theme is made possible by the following awesome code:
   - Centered the nav
 3. Posts views (Blog, Analysis, Portfolio Categories)
   - Unshade blue background for posts without a featured image - Colour now appears properly.
+4. Portfolio - single posts
+  - Add a title at the top on mobile
 
 ### v1.6
 1. Post/page editor
