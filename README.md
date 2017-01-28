@@ -10,6 +10,9 @@ This WordPress theme is made possible by the following awesome code:
 ### v1.7
 1. Footer Links
   - Custom footer menu - Edit this menu from *Appearance > Menus*. You can add as many links as you want!
+2. Portfolio navigation
+  - Removed "View projects as:" text
+  - Centered the nav
 
 ### v1.6
 1. Post/page editor
