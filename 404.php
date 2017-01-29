@@ -16,6 +16,10 @@
           There's nothing here...<br />try clicking the links at the top of the page?
         </p>
         
+        <p class="h3">
+          Or, try searching:<?php get_search_form(); ?>
+        </p>
+        
       </div>
 
     </div> <!-- .container -->

@@ -1211,6 +1211,25 @@ li.comment.depth-1 > div.comment-body > p {
 	padding-top: 125px;
 }
 
+/* Search */
+.search-list {
+	padding-top: 3px;
+}
+.search-result-title {
+	font-size: 17px;
+}
+.search-result-item {
+	margin-bottom: 20px;
+}
+.search-result-form {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.search-result-if-none {
+	padding: 100px 0;
+}
+
 /* Add This Plugin - Custom CSS */
 .addthis_toolbox {
 	float: right;
