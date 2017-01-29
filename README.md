@@ -23,6 +23,7 @@ This WordPress theme is made possible by the following awesome code:
   - Move date under post title and style it red
 7. 404 Error Page
   - Loads when the user tries to access a URL that doesn't exist, and displays a message.
+  - Also has a search bar, and allows for searching of the site's content.
 
 ### v1.6
 1. Post/page editor
