@@ -254,7 +254,7 @@ a:hover {
 		margin-right: 0;
 	}
 	.navbar-header > a.navbar-brand {
-		margin-left: 0;
+		padding-left: 0;
 	}
 }
 
