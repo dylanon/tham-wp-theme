@@ -67,7 +67,7 @@
 
           </a>
 
-          <div class="posts-view-pre-hover-text">
+          <div class="posts-view-pre-hover-text text-center">
             <h1><a class="text-uppercase" href="<?php the_permalink()?>"><?php the_title(); ?></a></h1>
             <?php if ( has_term( '', 'portfolio_category' ) ) { ?>
               <br />

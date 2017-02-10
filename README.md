@@ -7,6 +7,11 @@ This WordPress theme is made possible by the following awesome code:
 - [Bootstrap on Wordpress Theme](https://github.com/babobski/bootstrap-on-wordpress-theme) by babobski (for comments)
 
 ## Changelog
+### v1.8
+1. Blog, Analysis, and Portfolio Category views
+  - Changed font to *Courier New*
+  - Centered post preview text content on desktop
+
 ### v1.7
 1. Footer Links
   - Custom footer menu - Edit this menu from *Appearance > Menus*. You can add as many links as you want!
