@@ -1229,6 +1229,22 @@ li.comment.depth-1 > div.comment-body > p {
 		color: #dfb377;
 	}
 
+	.has-full-image-background .title-block {
+		-webkit-filter: drop-shadow(0px 1px 1px #333333);
+		filter: drop-shadow(0px 1px 1px #333333);
+	}
+
+	@media (min-width: 768px) {
+		.has-full-image-background .navbar {
+			-webkit-filter: drop-shadow(0px 1px 1px #333333);
+			filter: drop-shadow(0px 1px 1px #333333);
+		}
+		.has-full-image-background #nav-crossover .navbar {
+			-webkit-filter: drop-shadow(0px 0px 0px #333333);
+			filter: drop-shadow(0px 0px 0px #333333);
+		}
+	}
+
 /* 404 Error */
 .four-o-four {
 	padding-top: 125px;

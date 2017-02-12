@@ -18,6 +18,7 @@ Thank you for sharing your work!
   your own hosted video files, and more. See theme documentation below for more info.
 3. Pages with Full Image Backgrounds
   - Links now appear white, rather than unreadable blue.
+  - Fix navbar drop shadow - now appears darker and blends in with the shaded page background.
 
 ### v1.7
 1. Footer Links
