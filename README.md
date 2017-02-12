@@ -1,16 +1,21 @@
 # tham-wp-theme
 
-This WordPress theme is made possible by the following awesome code:
+This project was made possible by the following awesome code:
 - [Bootstrap](http://getbootstrap.com)
 - [TouchSwipe](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin) by Matt Bryson
 - [*Portfolio Post Type*](https://github.com/devinsays/portfolio-post-type) by Devin Price and Gary Jones
 - [Bootstrap on Wordpress Theme](https://github.com/babobski/bootstrap-on-wordpress-theme) by babobski (for comments)
+
+Thank you for sharing your work!
 
 ## Changelog
 ### v1.8
 1. Blog, Analysis, and Portfolio Category views
   - Changed font to *Courier New*
   - Centered post preview text content on desktop
+2. Responsive Video Embed
+  - Make embedded videos responsive using *Advanced Responsive Video Embedder (ARVE)* plugin. Supports YouTube, Vimeo,
+  your own hosted video files, and more. See theme documentation below for more info.
 
 ### v1.7
 1. Footer Links
@@ -123,14 +128,16 @@ This WordPress theme is made possible by the following awesome code:
 
 ## Documentation
 
-### Dependencies:
+### Requirements:
 - WordPress 4.7 or higher
-- plugin: Meta Box
-- plugin: FooGallery
-- plugin: FooBox Image Lightbox
-- plugin: Portfolio Post Type by Devin Price
-- plugin: TinyMCE Advanced
-- plugin: Share Buttons by AddThis
+- plugin: [Meta Box](https://en-ca.wordpress.org/plugins/meta-box/)
+- plugin: [FooGallery](https://en-ca.wordpress.org/plugins/foogallery/)
+- plugin: [FooBox Image Lightbox](https://en-ca.wordpress.org/plugins/foobox-image-lightbox/)
+- plugin: [Portfolio Post Type by Devin Price](https://en-ca.wordpress.org/plugins/portfolio-post-type/)
+- plugin: [TinyMCE Advanced](https://en-ca.wordpress.org/plugins/tinymce-advanced/)
+- plugin: [Share Buttons by AddThis](https://en-ca.wordpress.org/plugins/addthis/)
+- plugin: [Advanced Responsive Video Embedder](https://en-ca.wordpress.org/plugins/advanced-responsive-video-embedder/)
+- plugin: [Shortcake (Shortcode UI)](https://en-ca.wordpress.org/plugins/shortcode-ui/)
 
 ### Known issues:
 No known issues right now.
@@ -150,3 +157,22 @@ You can choose from two layouts for portfolio posts:
 2. **Right Column Wider** - Recommended when featured image is in *portrait* orientation
 
 Note that *Left Column Wider* is the default - If you don't choose otherwise, *Default Template* will be used, which is identical to *Left Column Wider*.
+
+### Embedding videos
+#### From online video providers
+Videos can be embedded by clicking the *Embed Video (ARVE)* button in the post editor. Supports many providers including
+YouTube and Vimeo. Paste the video link in right field and the ARVE will do the rest.
+
+#### From your video files
+To embed your own video, first upload the video file to the WordPress Media Library. Supports .mp4/.m4v/.webm/.ogv files.
+
+When the upload completes, click the video thumbnail to open the *Attachment Details* popup. Copy the video URL provided by
+WordPress - This is the path to your video file.
+
+Click the *Embed Video (ARVE)* button in the post editor and paste in your video URL.Click
+
+#### Changing video size and alignment
+By default, embedded videos take up the full width available - Setting alignment is unnecessary and might break things.
+
+When embedding a video in a post, you can specify *Maximal width* (number of pixels) and *Alignment* (None, Left, Right, Center)
+if you'd like the video to take up less than the full width available.
