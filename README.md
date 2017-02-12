@@ -16,6 +16,8 @@ Thank you for sharing your work!
 2. Responsive Video Embed
   - Make embedded videos responsive using *Advanced Responsive Video Embedder (ARVE)* plugin. Supports YouTube, Vimeo,
   your own hosted video files, and more. See theme documentation below for more info.
+3. Pages with Full Image Backgrounds
+  - Links now appear white, rather than unreadable blue.
 
 ### v1.7
 1. Footer Links

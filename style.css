@@ -1218,6 +1218,17 @@ li.comment.depth-1 > div.comment-body > p {
 	}
 }
 
+	/* Full Image Background */
+	.has-full-image-background a:link,
+	.has-full-image-background a:visited,
+	.has-full-image-background a:active {
+		color: #ffffff;
+	}
+
+	.has-full-image-background a:hover {
+		color: #dfb377;
+	}
+
 /* 404 Error */
 .four-o-four {
 	padding-top: 125px;
