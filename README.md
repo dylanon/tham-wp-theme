@@ -9,7 +9,7 @@ This project was made possible by the following awesome code:
 Thank you for sharing your work!
 
 ## Changelog
-### v1.8
+### v0.8
 1. Blog, Analysis, and Portfolio Category views
   - Changed font to *Courier New*
   - Centered post preview text content on desktop
@@ -19,8 +19,13 @@ Thank you for sharing your work!
 3. Pages with Full Image Backgrounds
   - Links now appear white, rather than unreadable blue.
   - Fix navbar drop shadow - now appears darker and blends in with the shaded page background.
+4. Removed old/unnecessary theme files
+5. Fix version numbering
+  - Retroactively re-numbered versions. 0.x means the theme is in development. The version used at site launch will be numbered
+  1.0. For now, the old numbering scheme (e.g. *1.x*) becomes *0.x*.
+  
 
-### v1.7
+### v0.7
 1. Footer Links
   - Custom footer menu - Edit this menu from *Appearance > Menus*. You can add as many links as you want!
 2. Portfolio navigation
@@ -38,7 +43,7 @@ Thank you for sharing your work!
   - Loads when the user tries to access a URL that doesn't exist, and displays a message.
   - Also has a search bar, and allows for searching of the site's content.
 
-### v1.6
+### v0.6
 1. Post/page editor
   - Remove baked-in custom styles, replace with plugin (*TinyMCE Advanced*)
   - Restyle headings in posts/pages - No longer all caps or in *Courier New* font.
@@ -46,7 +51,7 @@ Thank you for sharing your work!
   - Added styling for *AddThis* plugin social media share buttons
 3. New: Portfolio Navigation menu - Easily change sections & see which categories apply to the posts in view.
 
-### v1.5
+### v0.5
 1. Post titles are easier to read (added shader over featured images).
 2. Made Footer sticky - appears at bottom even when content doesn't fill the page.
 3. Mobile nav menu
@@ -55,7 +60,7 @@ Thank you for sharing your work!
   - Centered links and made them bigger.
 4. Revert Portfolio post content stacking to original order - On mobile, featured image is displayed first.
 
-### v1.4
+### v0.4
 1. Fixed *Image Background* page template behaviour - now **really** fills the whole background.
 2. Bugfix: Performance navigation bar now responds to taps/clicks to switch over to Thought.
 3. Add disabled code for jQuery Mobile for future use.
@@ -74,7 +79,7 @@ Thank you for sharing your work!
   - On larger touch devices, tap to see a section option - tap again to enter.
   - On full-sized computers, hover to selection section.
 
-### v1.3
+### v0.3
 1. *Analysis* page
   - Fix page title on mobile/tablet
   - 'Why Analysis' post excerpt is displayed at top on mobile/tablet, and in place of right column on desktop. Reduced to two columns of posts.
@@ -91,7 +96,7 @@ Thank you for sharing your work!
   - *Slim Layout* available in both *Performance* and *Thought* flavours.
   - Structural changes behind the scenes to make *Image Background* templates possible.
 
-### v1.2
+### v0.2
 1. Comments now supported on the blog.
 2. *Reviews* section changed to *Analysis*
 3. Bugfix: Posts in *Analysis* now light up the appropriate nav link in single post view.
@@ -101,7 +106,7 @@ Thank you for sharing your work!
 7. Incorporate featured images into post and portfolio listings, including a hover effect for desktop and pagination support.
 8. Prettied up URLs for Blog, Analysis, Portfolio Category listings.
 
-### v1.1
+### v0.1
 1. Portfolio items (single view)
   - Support for 2 custom content boxes
   - Support for alternative layout (use custom field to specify if left or right content box should be widest)
