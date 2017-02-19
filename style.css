@@ -1122,8 +1122,8 @@ nav.nav-portfolio a {
 	#front-page-performance:hover,
 	#front-page-thought:hover {
 		opacity: 1;
-		-webkit-filter: drop-shadow(1px 1px 50px #000000);
-		filter: drop-shadow(1px 1px 50px #000000);
+		-webkit-filter: drop-shadow(1px 1px 50px #333333);
+		filter: drop-shadow(1px 1px 50px #333333);
 	}
 	
 	#front-page-performance h1,
