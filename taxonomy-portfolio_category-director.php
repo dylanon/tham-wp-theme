@@ -8,10 +8,6 @@
 
   <div class="bottom-padded container">
       
-<!--       <h1 class="text-center">
-        Projects as Director
-      </h1> -->
-      
       <?php get_template_part( 'master_posts-view' ); // Posts View master code for category, archive,
                                                       // and portfolio category pages ?>
       

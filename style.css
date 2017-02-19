@@ -276,18 +276,9 @@ a:hover {
 	}
 }
 
-/* @media (min-width: 992px) {
-  .navbar .container {
-    width: 1170px;
-  }
-} */
-
 .navbar-brand {
-/*  float: left;*/
   height: auto;
   padding: 5px 15px;
-/*  font-size: 18px;
-  line-height: 20px;*/
 }
 
 .navbar { /* Remove default borders */
@@ -413,7 +404,7 @@ img.taylor-brand-horiz {
 
 @media (min-width: 768px) {
   .navbar-nav {
-    float: none; /*Navigation links display vertically*/
+    float: none; /* Navigation links display vertically */
     margin: 0;
   }
   .navbar-nav > li {
@@ -435,7 +426,6 @@ img.taylor-brand-horiz {
 }
 
 .navbar-nav {
-/*   margin: 0px -15px 0px 0px; */
   padding-top: 3px;
 }
 .navbar-nav > li > a {
@@ -478,7 +468,7 @@ img.taylor-brand-horiz {
 #nav-crossover {
 	position: absolute;
 	top: 0;
-	width: 100%; /* delete this after? */
+	width: 100%;
 	display: none;
 }
 
@@ -497,11 +487,6 @@ html, body {
 .no-padding {
 	padding: 0;
 }
-
-/* .page-wrapper {
-	min-height: 100%;
-	position: relative;
-} */
 
 /* Blog Styles (Archive/Category View) */
 .blog-post-preview {
@@ -871,13 +856,6 @@ nav.nav-portfolio a {
 	filter: grayscale(1); /* Colorize: Make background images grayscale */
 	transition: all .3s linear; /* Colorize: Set transitions */
 }
-
-/* Used to use this for background for portfolio sections. Now this is included inline in order to integrate with WP custom fields. */
-/* .square-background {
-	background: url('img/project.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-} */
 
 .square-content h2 {
 	color: #fff;
