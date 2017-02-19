@@ -1,13 +1,5 @@
 # tham-wp-theme
 
-This project was made possible by the following awesome code:
-- [Bootstrap](http://getbootstrap.com)
-- [TouchSwipe](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin) by Matt Bryson
-- [*Portfolio Post Type*](https://github.com/devinsays/portfolio-post-type) by Devin Price and Gary Jones
-- [Bootstrap on Wordpress Theme](https://github.com/babobski/bootstrap-on-wordpress-theme) by babobski (for comments)
-
-Thank you for sharing your work!
-
 ## Changelog
 ### v0.8
 1. Blog, Analysis, and Portfolio Category views
@@ -184,3 +176,14 @@ By default, embedded videos take up the full width available - Setting alignment
 
 When embedding a video in a post, you can specify *Maximal width* (number of pixels) and *Alignment* (None, Left, Right, Center)
 if you'd like the video to take up less than the full width available.
+
+## Copyright and Licenses
+
+Copyright 2016-2017 Dylan On. Code released under [GNU GPL v2](http://www.gnu.org/licenses/gpl-2.0.html) license.
+
+This project incorporates awesome licensed code from:
+- [Bootstrap](http://getbootstrap.com) created by Mark Otto and Jacob Thornton (MIT License)
+- [TouchSwipe](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin) by Matt Bryson (MIT License)
+- [Bootstrap on Wordpress Theme](https://github.com/babobski/bootstrap-on-wordpress-theme) by Babobski (for comments - GPL v2 License)
+
+Thank you for sharing your work!

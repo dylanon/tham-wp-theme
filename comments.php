@@ -6,10 +6,10 @@
  * and the comment form. The actual display of comments is
  * handled by a callback to bootstrap_comment() which is
  * located in the functions.php file.
- *
- * @package 	WordPress
- * @subpackage 	Bootstrap 3.3.7
- * @author		Babobski
+ * 
+ * Modified version of 'comments.php' from 'Bootstrap on WordPress' by Babobski
+ * (https://github.com/babobski/bootstrap-on-wordpress-theme)
+ * Modified on December 18, 2016 and redistributed in accordance with GPL v2 license.
  */
 ?>
 <div id="comments">
