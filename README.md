@@ -181,6 +181,7 @@ if you'd like the video to take up less than the full width available.
 
 Copyright 2016-2017 Dylan On. Code released under [GNU GPL v2](http://www.gnu.org/licenses/gpl-2.0.html) license.
 
+### Attribution
 This project incorporates awesome licensed code from:
 - [Bootstrap](http://getbootstrap.com) created by Mark Otto and Jacob Thornton (MIT License)
 - [TouchSwipe](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin) by Matt Bryson (MIT License)
