@@ -177,6 +177,14 @@ h6,
 	text-transform: none;
 }
 
+.blue-border {
+	border-color: #434d69;
+}
+
+.red-border {
+	border-color: #b55953;
+}
+
 a,
 a:visited,
 a:active {
@@ -187,6 +195,8 @@ a:active {
 a:hover {
 	color: #dfb377;
 }
+
+/* Nav Styles */
 
 .navbar-default a { /* Exclude navbar links from default styling */
 	text-decoration: none;
@@ -1251,4 +1261,22 @@ li.comment.depth-1 > div.comment-body > p {
 .addthis_toolbox {
 	float: right;
 	padding-top: 18px;
+}
+
+/* Content-Specific Styles */
+.text-box {
+	padding: 10px;
+	max-width: 600px;
+	border-width: 4px;
+	border-style: solid;
+	border-radius: 5px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.text-box p {
+	margin: 0;
+}
+.centered {
+	margin-left: auto;
+	margin-right: auto;
 }

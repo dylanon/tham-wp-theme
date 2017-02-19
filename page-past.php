@@ -6,10 +6,9 @@
       
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <h1 class="text-center no-bottom-margin"><?php the_title(); ?> Projects</h1>
+        <h1 class="text-center"><?php the_title(); ?> Projects</h1>
       
-        <div class="top-margin"><?php the_content(); ?></div>
-        <div class="text-right"><?php edit_post_link(); ?></div>
+        <div class="centered blue-border text-box"><?php the_content(); ?></div>
       
           <div class="row">
 
@@ -106,6 +105,8 @@
         </div>
 
         <?php } ?>
+        
+      <div class="text-right"><?php edit_post_link(); ?></div>
 
       <?php endwhile; else: ?>
         <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
