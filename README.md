@@ -1,6 +1,15 @@
 # tham-wp-theme
 
 ## Changelog
+### v0.9
+1. Past page
+  - Added a border for the text area.
+2. CV page
+  - Wrote HTML for a better layout (to be pasted manually in WordPress HTML editor for that page). See examples/cv.html.
+3. Coloured Content Boxes
+  - You can put text content in posts or pages in red, blue, or yellow bordered boxes by pasting some simple code into
+  WordPress' *Text (HTML)* view in the post editor. Read more about it in the documentation.
+
 ### v0.8
 1. Blog, Analysis, and Portfolio Category views
   - Changed font to *Courier New*
@@ -176,6 +185,25 @@ By default, embedded videos take up the full width available - Setting alignment
 
 When embedding a video in a post, you can specify *Maximal width* (number of pixels) and *Alignment* (None, Left, Right, Center)
 if you'd like the video to take up less than the full width available.
+
+### Using Coloured Content Boxes
+If you're willing to copy/paste a little code, you can put text content in posts or pages in red, blue, or yellow bordered boxes.If
+
+1. Open a post or page in the WordPress backend.
+2. Click the *Text (HTML)* tab for the editor. You should see code!
+3. Copy/paste the following into the editor (Careful not to break anything!):
+```
+<div class="centered blue-border text-box">
+  <p>Replace this with your text content!</p>
+</div>
+```
+4. Click the *Visual* tab for the editor.
+5. Look for "Replace this with your text content!", and well... replace it with your text content.
+
+#### Different colours
+You can replace *blue-border* in the sample code with:
+- *red-border* for a red box, or
+- *yellow-border* for a yellow box.
 
 ## Copyright and Licenses
 
