@@ -1266,16 +1266,22 @@ li.comment.depth-1 > div.comment-body > p {
 /* Content-Specific Styles */
 .text-box {
 	padding: 20px 25px;
-	max-width: 600px;
 	border-width: 4px;
 	border-style: solid;
 	border-radius: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.text-box-past p {
+	margin: 0;
+}
+
+.text-box-past {
+	max-width: 600px;
 	margin-top: 25px;
 	margin-bottom: 15px;
 }
-.text-box p {
-	margin: 0;
-}
+
 .centered {
 	margin-left: auto;
 	margin-right: auto;

@@ -8,7 +8,7 @@
 
         <h1 class="text-center"><?php the_title(); ?> Projects</h1>
       
-        <div class="centered blue-border text-box"><?php the_content(); ?></div>
+        <div class="centered blue-border text-box text-box-past"><?php the_content(); ?></div>
       
           <div class="row">
 
