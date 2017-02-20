@@ -9,6 +9,7 @@
 3. Coloured Content Boxes
   - You can put text content in posts or pages in red, blue, or yellow bordered boxes by pasting some simple code into
   WordPress' *Text (HTML)* view in the post editor. Read more about it in the documentation.
+4. Page titles are always centered now.
 
 ### v0.8
 1. Blog, Analysis, and Portfolio Category views
