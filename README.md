@@ -1,6 +1,10 @@
 # tham-wp-theme
 
 ## Changelog
+### v1.0.0
+1. New screenshot
+2. First release!
+
 ### v0.9
 1. Past page
   - Added a border for the text area.
