@@ -15,7 +15,7 @@
 <!-- the actual footer -->
 <div class="container-fluid footer text-center small">
   <p>
-    &copy;&nbsp;<?php echo date("Y") ?> Taylor Hammond
+    site by <a href="http://dylanon.com">dylanon</a>&nbsp;&nbsp;/&nbsp;&nbsp;&copy;&nbsp;<?php echo date("Y") ?> Taylor Hammond
     <?php if ( has_nav_menu( 'footer-menu' ) ) { ?>
       &nbsp;/
     <?php } ?>
